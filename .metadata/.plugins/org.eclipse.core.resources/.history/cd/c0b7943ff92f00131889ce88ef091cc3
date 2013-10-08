@@ -81,11 +81,20 @@ console.log(phoneNo);
 
 Casting Video Example End*/
 
-/* Assignment Operators Video Example Start
 
 var a = 3;
-a ++; //same as a = a + 1 // or a += 1
-a --; //same as a = a - 1 // a -= 1
+a ++; //same as a = a + 
 console.log(a);
 
-Assignment Operators Video Example End*/
+
+
+
+
+
+
+
+
+
+
+
+

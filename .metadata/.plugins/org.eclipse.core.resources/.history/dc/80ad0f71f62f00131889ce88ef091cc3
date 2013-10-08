@@ -56,36 +56,25 @@ console.log(total);
 Using Arrays in Expressions Video Example End*/
 
 
-/*Concatenating Strings Video Example Start
-
 //Concatenating - Means Combining Strings
 
-var a = 6;
-var b = 7;
+var firstName = "Andrew";
+var lastName = "Tillett";
+var fullName = firstName + lastName;
+console.log(fullName);
 
-var result = a + b;
-console.log(result);
 
-Concatenating Strings Video Example End*/
 
-/* Casting Video Example Start
- 
-//Casting - Treating Strings like Numbers and vice versa
 
-var areaCode = 407;
-var firstPart = 203;
-var secondPart = 4529;
-//(407 203-4529)
-var phoneNo = "(" + String(areaCode) + ")" + String(firstPart) + "-" + String(secondPart);
-console.log(phoneNo);
 
-Casting Video Example End*/
 
-/* Assignment Operators Video Example Start
 
-var a = 3;
-a ++; //same as a = a + 1 // or a += 1
-a --; //same as a = a - 1 // a -= 1
-console.log(a);
 
-Assignment Operators Video Example End*/
+
+
+
+
+
+
+
+
