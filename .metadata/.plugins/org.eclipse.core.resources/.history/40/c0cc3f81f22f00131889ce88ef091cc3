@@ -1,9 +1,11 @@
+/*
 
+var yearBorn = 1992;
 
 /*
 
 console.log("Hello World");
-console.log(yearBorn);
+console.log(yearBorn); */
 console.log(yearBorn);
 
 alert(yearBorn);
@@ -44,7 +46,7 @@ End of Defining Variables Screencast Example*/
 
 /* Beginning of String and Boolean Variables Screencast Example
 
-var age = 20; // Number Variable
+var age = 38; // Number Variable
 
 var isStudent = false; //Boolean Variable
 

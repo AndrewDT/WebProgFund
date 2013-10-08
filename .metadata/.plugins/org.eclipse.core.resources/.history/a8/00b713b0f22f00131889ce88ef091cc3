@@ -1,15 +1,12 @@
 
 
-/*
+
 
 console.log("Hello World");
 console.log(yearBorn);
 console.log(yearBorn);
 
 alert(yearBorn);
-
-End of console.log/alert screencast example
-*/
 
 /* Beginning of Declaring Variables Screencast Example
 var age;
@@ -44,7 +41,7 @@ End of Defining Variables Screencast Example*/
 
 /* Beginning of String and Boolean Variables Screencast Example
 
-var age = 20; // Number Variable
+var age = 38; // Number Variable
 
 var isStudent = false; //Boolean Variable
 

@@ -42,9 +42,9 @@ var yearOfBirth = 1992; //declaring and defining on the same line
 
 End of Defining Variables Screencast Example*/
 
-/* Beginning of String and Boolean Variables Screencast Example
+Beginning of String and Boolean Variables Screencast Example
 
-var age = 20; // Number Variable
+var age = 38; // Number Variable
 
 var isStudent = false; //Boolean Variable
 
@@ -53,8 +53,6 @@ var firstName = "Andrew";
 var phrase = 'I don\'t know \n You\'ll have to speak with the professor';
 
 // \n means NEW LINE
-
-End of String and Boolean Variables Screencast Example */
 
 /* Arrays Screencast Example Begin
 
