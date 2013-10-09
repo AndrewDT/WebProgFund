@@ -1,0 +1,97 @@
+//Examples:
+
+
+/* Dog Years Problem
+
+//Calculate Sparky the pit bull's age in dog years
+
+var sparkyHumanYears = 4;// Setting up the variable for Sparky's age in human years
+var sparkyDogYears = 7;// Setting up the variable for Sparky's age in dog years
+var result = "Sparky is " + sparkyHumanYears + " human years old which is " + sparkyHumanYears * sparkyDogYears + " in dog years.";// Setting up the variable with an expression and strings for the result of Sparky's age in dog years based on how old his is in human years
+console.log(result);// Printing the result variable to the console
+
+
+End of Dog Years Problem*/
+
+
+
+
+
+
+
+/* Slice of Pie Problem part 1
+
+
+//Calulate how much pizza each partygoer will get at the party
+
+var slicesPerPizza = 4.56;// Setting up the variable for how many slices there are for each pizza
+var peopleAtTheParty = 12;// Setting up the variable for how many people are at the party
+var pizzasOrdered = 7;// Setting up the variable for how many pizzas were ordered
+var totalNumberOfSlices = pizzasOrdered * slicesPerPizza;// Setting up the variable with the expression that gives the total number of slices of pizza based on the total number of pizzas ordered
+var result = "Each person ate " + totalNumberOfSlices / peopleAtTheParty + " slices of pizza at the party";// Setting up the variable with an expression and strings to give the total number of slices each partygoer will get based on the number of people and total number of pizza slices
+console.log(result);// Printing the result variable to the console
+
+
+End of Slices of Pie Problem part 1 */
+
+
+
+
+
+
+/* Slice of Pie Problem part II
+
+//Calculate how many leftover whole slices of pizza Sparky will recieve
+
+var slicesPerPizza = 4;// Setting up the variable for how many slices there are for each pizza
+var peopleAtTheParty = 12;// Setting up the variable for how many people are at the party
+var pizzasOrdered = 7;// Setting up the variable for how many pizzas were ordered
+var totalNumberOfSlices = pizzasOrdered * slicesPerPizza;// Setting up the variable with the expression that gives the total number of slices of pizza based on the total number of pizzas ordered
+var result = "Sparky got " + totalNumberOfSlices % peopleAtTheParty + " slices of pizza";// Setting up the variable with an expression and strings to give the total remaining number of leftover whole slices Sparky will get after each partygoer receives their amount of pizza
+console.log(result);// Printing the result variable to the console
+
+End of Slices of Pie Problem part II*/
+
+
+
+
+
+
+/* Average shopping bill Problem
+
+
+//Calculate the average weekly grocery shopping spending over the past five weeks
+
+var weeklyGroceryTotals = [50, 77, 60, 55, 53];// Creating an array to hold the total spent on groceries each week for 5 weeks
+var completeGroceryTotal = (weeklyGroceryTotals[0] + weeklyGroceryTotals[1] + weeklyGroceryTotals[2] + weeklyGroceryTotals[3] + weeklyGroceryTotals[4]);// Creating a variable that is assigned the complete total of groceries for the 5 weeks based on an expression that adds each array item up into a total
+var result = "You have spent a total of $" + completeGroceryTotal + " on groceries over 5 weeks." + " That is an average of $" + completeGroceryTotal/5 + " per week";// Creating a result variable that contains strings and the expression that calculates the average of the 5 week grocery sum (completeGroceryTotal)
+console.log(result);// Printing the result variable to the console
+
+End of Average shopping bill Problem*/
+
+
+
+
+
+
+/*Discounts Problem
+
+
+//Calculate the discounted price for an item
+
+var originalPrice = 18.99;// Creating a variable for the orignal price of the item
+var discount = 10;// Creating a variable for the discount percent on the item
+var description = "Supplement";// Creating a variable for the item's description
+var salesTax = .07;// Creating a variable for the applicable sales tax on the item
+
+var priceWithoutTax = originalPrice - originalPrice/discount;// Creating a variable with an expression that gives the price of the item without tax by subtracting the result of the division of originalPrice and discount variables from the originalPrice variable
+var priceWithTax = priceWithoutTax + originalPrice*salesTax;// Creating a variable with an expression that gives the price of the item with tax by adding the priceWithoutTax variable to result of the variables orginalPrice multiplied by salesTax
+
+var result = "Your " + description + " was originally $" + originalPrice + ", but after a " + discount + "% discount, it is now $" + priceWithoutTax + " without tax, and $" + priceWithTax + " with tax.";
+// Creating a result variable with strings and variables and assigning each variable its appropriate place for the desired outcome
+console.log(result);// Printing the result variable to the console
+
+End of Discounts Problem*/
+
+
+
