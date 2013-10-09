@@ -104,34 +104,14 @@ Total amount spent on groceries.
 Average weekly grocery spending.
     Result to Print:
 “You have spent a total of $X on groceries over 5 weeks. That is an average of $X per week”
-
+*/
 
 //Calculate the average weekly grocery shopping spending over the past five weeks
 
 var weeklyGroceryTotals = [50, 77, 60, 55, 53];
 var completeGroceryTotal = (weeklyGroceryTotals[0] + weeklyGroceryTotals[1] + weeklyGroceryTotals[2] + weeklyGroceryTotals[3] + weeklyGroceryTotals[4]);
-var result = "You have spent a total of $" + completeGroceryTotal + " on groceries over 5 weeks." + " That is an average of $" + completeGroceryTotal/5 + " per week";
+var result = "You have spent a total of " completeGroceryTotal + " on groceries over 5 weeks." + " That is an average of " + completeGroceryTotal/5 + " per week";
 console.log(result);
-
-End of Problem 4*/
-
-
-/*Discounts
-
-Calculate the discounted price for an item. Create an expression that will calculate the discounted price with and without sales tax. (It is acceptable for the result to have more than two digits after the decimal. $345.896 for example.)
-     Givens:
-Original price
-Discount percentage (20% would be 20, for example)
-Description of item
-Sales tax percentage
-     Result Variables:
-Price of the item with tax
-Price of the item without tax
-     Result to Print:
-“Your X was originally $X, but after a X% discount, it is now $X without tax, and $X with tax.”
-*/
-
-
 
 
 
