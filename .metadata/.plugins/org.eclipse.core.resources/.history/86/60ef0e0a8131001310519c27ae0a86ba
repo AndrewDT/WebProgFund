@@ -1,0 +1,16 @@
+// Andrew Tillett 10/10/13 Expressions Personal
+
+//To maintain current weight, lose weight, or gain weight we all must meet a specific daily caloric intake. Given your weight in pounds(lbs), age, gender, and activity factor calculate your daily caloric intake
+
+//Givens: Weight in Pounds(lbs) / Age / Gender
+
+//Result Variable: Your daily caloric intake
+
+//Result to Print: "Based on your weight of Xkg (kilograms), age of x years, gender of x, and activity factor of x, your daily caloric intake is x calories."
+
+
+var weightPounds = prompt("First we need to convert your weight to kilograms(kg) \nPlease enter your weight in pounds(lbs)");
+var weightKilograms = weightPounds/2.2;
+
+var gender = prompt("Please enter your gender");
+
