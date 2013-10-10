@@ -1,0 +1,9 @@
+// Andrew Tillett 10/10/13 Expressions Wacky
+
+//Spider-man is a great superhero with great power, however, he does not actually have spider web powers and he uses fluid for his webshooters. Assuming he uses 3oz of fluid per city block traveled and 5oz per height in feet of the villain, calculate the amount leftover after fighting the villain if given X amount of total fluid, traveling X city blocks, and X height in feet of the villain.
+
+//Givens: Amount of total fluid / City blocks traveled / Villain height in feet
+
+//Result Variable: Fluid remaining after traveling and fighting the villain
+
+//Result to Print: "Spidey would have Xoz of fluid left after pursuing and fighting the villain."
