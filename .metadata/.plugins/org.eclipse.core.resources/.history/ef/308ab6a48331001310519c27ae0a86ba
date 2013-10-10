@@ -8,7 +8,7 @@
 
 //Result to Print: "Based on your weight of Xkg (kilograms), height of Xcm, and age of x years, your Basil Metabolic Rate (BMR) is x calories a day."
 
-var greeting = "This calculator can calculate the Basil Metabolic Rate (BMR) of any male \n(Sorry ladies!)";
+var greeting = "This calculator can calculate the Basil Metabolic Rate (BMR) of any male \n (Sorry ladies!)";
 alert(greeting);
 
 var weightPounds = prompt("First we need to convert your weight to kilograms(kg) \nPlease enter your weight in pounds(lbs)");
