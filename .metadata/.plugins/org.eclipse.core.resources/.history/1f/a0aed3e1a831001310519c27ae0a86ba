@@ -21,6 +21,7 @@ var bmr = 88.362 + (13.397 * weightKilograms) + (4.799 * heightCentimeters) - (5
 var result = "Based on your weight of " + weightKilograms + "kg (kilograms), height of " + heightCentimeters + "cm, and age of " + age + " years, your Basil Metabolic Rate (BMR) is " + bmr + " calories a day.";
 // Result variable used to add supporting text and show the user their given information and resulting BMR
 
-alert(result); // Alert used to show the result variable and its supporting text, a user's given information, and resulting BMR to the user
+alert(result) = "Based on your weight of " + weightKilograms + "kg (kilograms), height of " + heightCentimeters + "cm, and age of " + age + " years, your Basil Metabolic Rate (BMR) is " + bmr + " calories a day.";
+// Alert used to show the result variable and its supporting text, a user's given information, and resulting BMR to the user
 
 console.log(result);// Used to print the result to the machine along with all supporting text, user inputted information, and resulting BMR
