@@ -17,9 +17,7 @@ var tickets = prompt("Please enter your total number of Tickets");// Prompt to g
 var sales = [halfPrice, candyBundles, rentThree, rods];// Array used to organize the user inputed sales information, except for tickets
 
 var total = (Number(sales[0]) + Number(sales[1]) + Number(sales[2]) + Number(sales[3]))/tickets*100;// Variable with an expression that adds the sales array items, divides the ticket numbers, and then multiplied by 100 to give the accurate sales percentage based on the user's information
-
 var result = "You have a sales percentage of " + total + "%" + " based on your sales of " + halfPrice + " half prices, " + candyBundles + " candy bundles, " + rentThree + " rent threes, and " + rods + " RODs, with " + tickets + " tickets.";
 // Result variable used to add supporting text and show the user their given information and resulting sales percentage
-
 alert(result);// Alert used to show the result variable and its supporting text, a user's given information, and resulting sales percentage to the user
 console.log(result);// Used to print the result to the machine along with all supporting text, user inputted information, and resulting sales percentage
