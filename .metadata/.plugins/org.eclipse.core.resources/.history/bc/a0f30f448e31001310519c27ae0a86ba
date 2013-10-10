@@ -6,20 +6,15 @@
 
 //Result Variable: Calculated current sales percentage
 
-//Result to Print: "Based on your sales, your current sales percentage is x%"
-
-var greeting = "Here we can calculate your current sales percentage!";
-alert(greeting);
+//Result to Print: "With X Half-Price Rentals, X Candy Bundles, X Rent 3 Get 1 Free Movies, X RODs, and X Tickets, your sales percentage is X%"
 
 var halfPrice = prompt("Please enter your total number of sold Half-Price rentals");
 var candyBundles = prompt("Please enter your total number of sold Candy Bundles");
 var rentThree = prompt("Please enter your total number of sold Rent 3 Get 1 Free Movies");
-var rods = prompt("Please enter your total number sold RODs");
 var tickets = prompt("Please enter your total number of Tickets");
 
-var sales = [halfPrice, candyBundles, rentThree, rods];
+var sales = [halfPrice, candyBundles, rentThree];
 
-var total = (Number(sales[0]) + Number(sales[1]) + Number(sales[2]) + Number(sales[3]))/tickets*100;
-var result = "Based on your sales, your current sales percentage is " + total + "%";
-alert(result);
-console.log(result);
+var total = (Number(sales[0]) + Number(sales[1]) + Number(sales[2]))/tickets*100;
+alert(total) = "With " + halfPrice + " Half Price Rentals, " + candyBundles + " Candy Bundles, " + rentThree + " Rent 3 Movies, " + rods + " RODs, and " + tickets + " Tickets.";
+console.log(total) = "With " + halfPrice + " Half Price Rentals, " + candyBundles + " Candy Bundles, " + rentThree + " Rent 3 Movies, and " + tickets + " Tickets, your sales are " + total + "%25";
