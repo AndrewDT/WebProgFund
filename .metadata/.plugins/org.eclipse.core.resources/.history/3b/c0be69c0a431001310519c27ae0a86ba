@@ -1,6 +1,9 @@
 // Andrew Tillett 10/10/13 Expressions Industry
 
-alert("At Family Video, our sales percentages are very important. The company wants to have a percentage of at least 10%. Given your sales of half-price rentals, candy bundles, rent 3 get 1 free movies, RODs (rentals of the day), and total number of tickets, calculate your current sales percentage."); // Alert to show the problem variable to users so they can understand the later input prompts
+var problem = "At Family Video, our sales percentages are very important. The company wants to have a percentage of at least 10%. Given your sales of half-price rentals, candy bundles, rent 3 get 1 free movies, RODs (rentals of the day), and total number of tickets, calculate your current sales percentage.";
+// Variable set up to describe the problem, givens, and goal to users
+
+alert(problem); // Alert to show the problem variable to users so they can understand the later input prompts
 
 //Givens: Half-Price Rentals / Candy Bundles / Rent 3 Get 1 Free Movies / RODs / Total Tickets
 

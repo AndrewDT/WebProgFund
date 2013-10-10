@@ -1,6 +1,8 @@
 // Andrew Tillett 10/10/13 Expressions Personal
 
-alert("Each person has a Basal Metabolic Rate (BMR). Assuming all users are male and given weight in pounds(lbs), height(in), and age calculate the BMR of a specific male"); // Alert to show the problem variable to users so they can understand the later input prompts
+var problem = "Each person has a Basal Metabolic Rate (BMR). Assuming all users are male and given weight in pounds(lbs), height(in), and age calculate the BMR of a specific male"; // Variable set up to describe the problem, givens, and goal to users
+
+alert(problem); // Alert to show the problem variable to users so they can understand the later input prompts
 
 //Givens: Weight in Pounds(lbs) / Height / Age
 
