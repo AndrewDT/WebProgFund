@@ -16,6 +16,5 @@ var tickets = prompt("Please enter your total number of Tickets");
 
 var sales = [halfPrice, candyBundles, rentThree, rods];
 
-var total = (Number(sales[0]) + Number(sales[1]) + Number(sales[2]) + Number(sales[3]))/tickets*100;
-alert(total) = "Based on " + halfPrice + " Half Price Rentals, " + candyBundles + " Candy Bundles, " + rentThree + " Rent 3 Movies, " + rods + " RODs, and " + tickets + " Tickets.";
-console.log(total);
+var total = (sales[0] + sales[1] + sales[2] + sales[3])/tickets;
+console.log(sales[3]);
