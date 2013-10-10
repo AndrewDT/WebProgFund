@@ -11,6 +11,5 @@
 
 var weightPounds = prompt("First we need to convert your weight to kilograms(kg) \nPlease enter your weight in pounds(lbs)");
 var weightKilograms = weightPounds/2.2;
-
-var gender = prompt("Please enter your gender");
+alert(weightKilograms);
 

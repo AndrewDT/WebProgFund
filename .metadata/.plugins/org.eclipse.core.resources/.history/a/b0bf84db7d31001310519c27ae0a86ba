@@ -9,8 +9,5 @@
 //Result to Print: "Based on your weight of Xkg (kilograms), age of x years, gender of x, and activity factor of x, your daily caloric intake is x calories."
 
 
-var weightPounds = prompt("First we need to convert your weight to kilograms(kg) \nPlease enter your weight in pounds(lbs)");
-var weightKilograms = weightPounds/2.2;
-
-var gender = prompt("Please enter your gender");
-
+var weightPounds = prompt("First we need to convert your weight to kilograms(kg) /nPlease enter your weight in pounds(lbs)");
+alert(weightPounds);
