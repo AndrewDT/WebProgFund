@@ -1,0 +1,25 @@
+// Andrew Tillett 10/10/13 Expressions Personal
+
+//My pre-paid cell phone plan is $35 a month from Virgin Mobile. There are other plans from different providers. Straight Talk which includes better phones and same coverage for $45 a month and Boost Mobile with better phones and coverage for $50 a month. I need to calculate how much extra money it would cost annually for the more expensive plans compared to my current plan.
+
+//Givens: Virgin Mobile Plan Cost / Straight Talk Plan Cost / Boost Mobile Plan Cost
+
+//Result Variable: The compared cost of each plan
+
+//Result to Print: "The Virgin Mobile plan costs $X annually, which is $X cheaper than the Straight Talk plan's annual cost of $X, and $X cheaper than the Boost Mobile plan's annual cost of $X."
+
+
+var virginMonthly = 35;
+var straightTalkMonthly = 45;
+var boostMonthly = 50;
+var months = 12;
+
+var virginAnnually = virginMonthly * months;
+var straightTalkAnnually = straightTalkMonthly * months;
+var boostAnnually = boostMonthly * months;
+
+var virginStraightTalkDifference = straightTalkAnnually - virginAnnually;
+var virginBoostDifference = boostAnnually - virginAnnually;
+console.log(virginBoostDifference);
+
+
