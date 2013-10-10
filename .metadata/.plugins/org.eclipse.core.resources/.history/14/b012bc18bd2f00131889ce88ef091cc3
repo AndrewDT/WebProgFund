@@ -1,3 +1,0 @@
-var yearborn = 1992;
-alert(yearborn);
-
