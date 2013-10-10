@@ -6,4 +6,4 @@
 
 //Result Variable: The compared cost of each plan
 
-//Result to Print: "The Virgin Mobile plan costs $X annually, which is $X cheaper than the Straight Talk plan's annual cost of $X, and $X cheaper than the Boost Mobile plan's annual cost of $X."
+//Result to Print: "The Virgin Mobile plan costs $X annually, which is $X cheaper than the Straight Talk plan's cost of $X, and $X cheaper than the Boost Mobile plan's cost of $X."
