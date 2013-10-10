@@ -9,6 +9,9 @@ alert(problem);
 
 //Result to Print: "You have a sales percentage of X% based on your sales of X half prices, X candy bundles, X rent threes, and X RODs, with X tickets."
 
+var greeting = "Here we can calculate your current sales percentage!";
+alert(greeting);
+
 var halfPrice = prompt("Please enter your total number of sold Half-Price rentals");
 var candyBundles = prompt("Please enter your total number of sold Candy Bundles");
 var rentThree = prompt("Please enter your total number of sold Rent 3 Get 1 Free Movies");

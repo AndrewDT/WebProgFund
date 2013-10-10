@@ -1,13 +1,15 @@
 // Andrew Tillett 10/10/13 Expressions Industry
 
-var problem = "At Family Video, our sales percentages are very important. The company wants to have a percentage of at least 10%. Given your sales of half-price rentals, candy bundles, rent 3 get 1 free movies, RODs (rentals of the day), and total number of tickets, calculate your current sales percentage.";
-alert(problem);
+//At Family Video, our sales percentages are very important. The company wants to have a percentage of at least 10%. Given your sales of half-price rentals, candy bundles, rent 3 get 1 free movies, RODs (rentals of the day), and total number of tickets, calculate your current sales percentage.
 
 //Givens: Half-Price Rentals / Candy Bundles / Rent 3 Get 1 Free Movies / RODs / Total Tickets
 
 //Result Variable: Calculated current sales percentage
 
-//Result to Print: "You have a sales percentage of X% based on your sales of X half prices, X candy bundles, X rent threes, and X RODs, with X tickets."
+//Result to Print: "Based on your sales, your current sales percentage is x%"
+
+var greeting = "Here we can calculate your current sales percentage!";
+alert(greeting);
 
 var halfPrice = prompt("Please enter your total number of sold Half-Price rentals");
 var candyBundles = prompt("Please enter your total number of sold Candy Bundles");
