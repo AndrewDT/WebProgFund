@@ -305,22 +305,7 @@ book = (age < 10) ? "Green Eggs and Ham" : "The Time Machine";
  */
 
 
-//Introduction to Conditionals
 
-/*
- 4 Types of procedural code
- Sequential
- Conditional
- Reusable
- Repetitive
- 
- Addressing Conditional
- Recipe Metaphor (If we are at high altitude, add an egg)
- 
- Conditional code acts the same way
- Choosing whether to run a block of code or not
- Choosing between blocks of code
- */
 
 
 

@@ -1,0 +1,14 @@
+//Conditional Logic Concepts
+/* Conditional Statement:
+ 
+if(CONDITION){
+ ACTIONS
+}
+
+sunny=true
+if(sunny){
+	goToTheBeach();
+}ELSE{
+	goToTheMovies();
+}
+ */

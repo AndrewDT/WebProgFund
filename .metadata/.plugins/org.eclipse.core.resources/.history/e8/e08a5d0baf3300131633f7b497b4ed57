@@ -290,14 +290,13 @@ var age = 6;
 var book;
 
 //if the child is under 10, they get Green Eggs and Ham, otherwise they get The Time Machine
-//Traditional Conditional
 if(age < 10){
 	book = "Green Eggs and Ham";
 }else{
 	book = "The Time Machine";
 }
 console.log(book);
-//Ternary Form
+
 book = (age < 10) ? "Green Eggs and Ham" : "The Time Machine";
  
  
@@ -305,22 +304,7 @@ book = (age < 10) ? "Green Eggs and Ham" : "The Time Machine";
  */
 
 
-//Introduction to Conditionals
 
-/*
- 4 Types of procedural code
- Sequential
- Conditional
- Reusable
- Repetitive
- 
- Addressing Conditional
- Recipe Metaphor (If we are at high altitude, add an egg)
- 
- Conditional code acts the same way
- Choosing whether to run a block of code or not
- Choosing between blocks of code
- */
 
 
 
