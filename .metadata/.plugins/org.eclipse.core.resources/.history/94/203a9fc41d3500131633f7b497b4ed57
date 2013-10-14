@@ -32,8 +32,8 @@ var discountTime = movieTime > 3 && movieTime < 5;// Variable that is assigned a
 
 // If discountAge or discountTime is TRUE, print to console "The ticket price is $7.00"
 // Else, if neither discountAge or discountTime are true, print to console "The ticket price is $12.00"
-if(discountAge || discountTime){
+if(discountAge || discountTime){// Setting up the if statement to determine whether inputted values reach a TRUE or FALSE according to the statement
 	console.log("The ticket price is $" + discountPrice);// Printing to console the given string if the if statement is TRUE
-}else{
+}else{// Setting up the else statement for when the if statement is false according to inputted values
 	console.log("The ticket price is $" + price);// Printing to the console the given string if the if statement is FALSE
 }

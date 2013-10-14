@@ -21,17 +21,15 @@ Result To Print Out:
  */
 
 
-var gasEfficiency = 28;// Variable for assigning the gas efficiency of the car
-var gasGauge = .75;// Variable for assigning the read of the gas gauge of the car
-var tankCapacity = 12;// Variable for assigning the car's tank capacity
-var nextStation = 200;// Variable assigned the given 200 miles to the next station
+var gasEfficiency = 28;
+var gasGauge = .75;
+var tankCapacity = 12;
+var nextStation = 200;
 
-var currentGas = gasGauge * tankCapacity;// Variable for use in the if and else statements used to hold the assigned formula results
+var currentGas = gasGauge * tankCapacity;
 
-//If currentGas TIMES gasEfficiency is greater than nextStation, print to the console "Yes, you can make it without stopping for gas!"
-//Else print to the console "You only have currentGas gallons of gas in your tank, better get gas now while you can!"
 if(currentGas * gasEfficiency > nextStation){
-	console.log("Yes, you can make it without stopping for gas!");// Printing to the console the given string if the above statement is TRUE
+	console.log("Yes, you can make it without stopping for gas!");
 }else{
-	console.log("You only have " + currentGas + " gallons of gas in your tank, better get gas now while you can!");// Printing to the console if the preceding statement is FALSE
+	console.log("You only have " + currentGas + " gallons of gas in your tank, better get gas now while you can!");
 }

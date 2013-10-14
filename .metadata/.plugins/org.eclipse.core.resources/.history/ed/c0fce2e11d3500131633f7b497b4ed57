@@ -31,7 +31,7 @@ var currentGas = gasGauge * tankCapacity;// Variable for use in the if and else 
 //If currentGas TIMES gasEfficiency is greater than nextStation, print to the console "Yes, you can make it without stopping for gas!"
 //Else print to the console "You only have currentGas gallons of gas in your tank, better get gas now while you can!"
 if(currentGas * gasEfficiency > nextStation){
-	console.log("Yes, you can make it without stopping for gas!");// Printing to the console the given string if the above statement is TRUE
+	console.log("Yes, you can make it without stopping for gas!");
 }else{
-	console.log("You only have " + currentGas + " gallons of gas in your tank, better get gas now while you can!");// Printing to the console if the preceding statement is FALSE
+	console.log("You only have " + currentGas + " gallons of gas in your tank, better get gas now while you can!");
 }
