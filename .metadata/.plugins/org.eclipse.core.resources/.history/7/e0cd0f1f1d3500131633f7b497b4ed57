@@ -22,18 +22,15 @@ Result To Print Out:
 “Password does not match our records.”  -if the username matches but the password does not
 */
 
-var enteredUsername = "Andrew";// Variable for assigning the username information the user enters
-var enteredPassword = "Password";// Variable for assigning the password information the user enters
-var correctUsername = "Andrew";// Variable for the assigned correct username in the system
-var correctPassword = "Password";// Variable for the assigned correct password in the system
+var enteredUsername = "Andrew";
+var enteredPassword = "Password";
+var correctUsername = "Andrew";
+var correctPassword = "Password";
 
-//If enteredUsername is strictly equal to correctUsername AND enterpassword is strictly equal to correctPassword, print to console "Welcome, (correctUsername!)"
-//Else if enteredUsername is NOT equal to correctUsername, print to console "User not found. Try again"
-//Else print to console "Password does not match our records"
 if(enteredUsername === correctUsername && enteredPassword === correctPassword){
- 	console.log("Welcome, " + correctUsername + "!");// Printing to console the given string if the above statement is TRUE
+ 	console.log("Welcome, " + correctUsername + "!");
  }else if(enteredUsername != correctUsername){
- 	console.log("User not found. Try again.");// Printing to the console the given string if the preceding statement is FALSE and the else if is TRUE
+ 	console.log("User not found. Try again.");
  }else{
- 	console.log("Password does not match our records.");// Printing to the console the given string if the preceding statements are both FALSE
+ 	console.log("Password does not match our records.");
  }
