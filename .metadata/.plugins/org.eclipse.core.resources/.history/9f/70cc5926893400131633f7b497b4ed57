@@ -22,15 +22,3 @@ Result To Print Out:
 “Password does not match our records.”  -if the username matches but the password does not
 */
 
-var enteredUsername = "Andrew";
-var enteredPassword = "Password";
-var correctUsername = "Andrew";
-var correctPassword = "Password";
-
-if(enteredUsername === correctUsername && enteredPassword === correctPassword){
- 	console.log("Welcome, " + correctUsername + "!");
- }else if(enteredUsername != correctUsername){
- 	console.log("User not found. Try again.");
- }else{
- 	console.log("Password does not match our records.");
- }

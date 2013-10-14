@@ -23,8 +23,8 @@ Result To Print Out:
 */
 
 var enteredUsername = "Andrew";
-var enteredPassword = "Password";
-var correctUsername = "Andrew";
+var enteredPassword = "Password"
+var correctUsername = "andrew";
 var correctPassword = "Password";
 
 if(enteredUsername === correctUsername && enteredPassword === correctPassword){

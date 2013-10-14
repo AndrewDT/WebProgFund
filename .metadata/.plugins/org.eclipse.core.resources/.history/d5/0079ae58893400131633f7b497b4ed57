@@ -23,12 +23,12 @@ Result To Print Out:
 */
 
 var enteredUsername = "Andrew";
-var enteredPassword = "Password";
+var enteredPassword = "Password"
 var correctUsername = "Andrew";
-var correctPassword = "Password";
+var correctPassword = "password";
 
-if(enteredUsername === correctUsername && enteredPassword === correctPassword){
- 	console.log("Welcome, " + correctUsername + "!");
+else(enteredUsername === correctUsername && enteredPassword === correctPassword){
+ 	console.log("Welcome, " + correctUsername "!");
  }else if(enteredUsername != correctUsername){
  	console.log("User not found. Try again.");
  }else{

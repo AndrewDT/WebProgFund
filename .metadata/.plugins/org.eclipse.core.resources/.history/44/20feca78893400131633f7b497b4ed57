@@ -23,7 +23,7 @@ Result To Print Out:
 */
 
 var enteredUsername = "Andrew";
-var enteredPassword = "Password";
+var enteredPassword = "Password"
 var correctUsername = "Andrew";
 var correctPassword = "Password";
 
