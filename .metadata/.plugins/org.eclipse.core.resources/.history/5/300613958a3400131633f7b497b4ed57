@@ -10,7 +10,7 @@ Create code that will make decisions based on the value of the givens
 Print the result of the decision-making to the console.
 Use only code and techniques learned in this class.
 
-Problem: Movie Ticket Price
+Problem:Movie Ticket Price
 
 The local movie theater in town has a ticket price of $12.00 but if you are a senior (55 and older), under 10 you get the discounted price of $7.00. In addition, if a customer is seeing a movie between 3pm and 5pm they can also get the discounted price. 
 Determine which of the two prices the customer is eligible for.
@@ -19,19 +19,6 @@ Time of Movie (Assume whole numbers here)
 Age of the customer
  Result To Print Out:
 “The ticket price is X”
+
+
 */
-
-var movieTime = 2;
-var customerAge = 10;
-
-var price = 12.00;
-var discountPrice = 7.00;
-
-var discountAge = customerAge < 10 || customerAge >= 55;
-var discountTime = movieTime > 3 && movieTime < 5;
-
-if(discountAge || discountTime){
-	console.log("The ticket price is $" + discountPrice);
-}else{
-	console.log("The ticket price is $" + price);
-}

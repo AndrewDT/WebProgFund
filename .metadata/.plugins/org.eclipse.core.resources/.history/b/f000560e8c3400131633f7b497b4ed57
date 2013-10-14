@@ -22,7 +22,7 @@ Age of the customer
 */
 
 var movieTime = 2;
-var customerAge = 10;
+var customerAge = 54;
 
 var price = 12.00;
 var discountPrice = 7.00;

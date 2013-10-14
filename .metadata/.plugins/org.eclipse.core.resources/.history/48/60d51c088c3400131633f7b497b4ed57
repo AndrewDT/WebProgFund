@@ -21,8 +21,8 @@ Age of the customer
 “The ticket price is X”
 */
 
-var movieTime = 2;
-var customerAge = 10;
+var movieTime = 4.5;
+var customerAge = 54;
 
 var price = 12.00;
 var discountPrice = 7.00;
