@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sites>
+<site>
+<name>New Connection</name>
+<source>workspace:/Group_1_Last_chance_for_gas</source>
+<destination>workspace:/Group_1_Last_chance_for_gas</destination>
+</site>
+</sites>
