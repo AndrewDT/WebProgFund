@@ -28,4 +28,27 @@ Failing to do so will result in a 0 for the assignment.
 
 Problem:
 When lifting, it is important to adjust weight according to the maximum number of repetitions you can do at that weight. If the weight allows you to do 3 or less perfect repetitions, the weight should be decreased by 10%, and if the weight allows you to do more than 20 repetitions, the weight should be increased by 20%.
-/*
+
+Givens:
+Current weight load
+Number of repetitions
+
+Result: "You are lifting xlbs for x reps, which means this weight is perfect!", "Sorry, you can only do x reps at xlbs, so the weight is too heavy for you right now!", or "You can do x reps at xlbs, that's lightweight for you! Looks like you need to go heavier!"
+*/
+
+
+var currentWeight = prompt("Please enter the current weight you are lifting (in lbs)");
+var reps = prompt("Please enter the number of perfect repetitions you can perform at your current weight load");
+
+var tooHeavy = reps <= 3;
+var tooLight = reps > 20;
+
+var heavyReduction = .10
+var lightIncrease = .20
+
+var perfectWeight;
+
+if(tooHeavy){
+	var perfectWeight = currentWeight - currentWeight*heavyReduction;
+	console.log("Sorry you can only do " + reps + " reps at " + currentWeight + "lbs, so the weight is too heavy for you right now!");
+}
