@@ -50,8 +50,10 @@ var perfectWeight;
 
 if(tooHeavy){
 	var perfectWeight = currentWeight - currentWeight*heavyReduction;
-	console.log("Sorry you can only do " + reps + " reps at " + currentWeight + "lbs, so the weight is too heavy for you right now!");
+	console.log("Sorry, you can only do " + reps + " reps at " + currentWeight + "lbs, so the weight is too heavy for you right now! Try " + perfectWeight + "lbs.");
 }else if(tooLight){
-	var perfectWeight = currentWeight + currentWeight*tooLight;
-	console.log("You can do " + reps + " reps at " + currentWeight + "lbs, that's lightweight for you! Looks like you need to go heavier!");
+	var perfectWeight = Number(currentWeight) + Number(currentWeight)*Number(lightIncrease);
+	console.log("You can do " + reps + " reps at " + currentWeight + "lbs, that's lightweight for you! Looks like you need to go heavier! Try " + perfectWeight + "lbs.");
+}else{
+	console.log("You are lifting " + currentWeight + "lbs for " + reps + " reps, which means this weight is perfect!");
 }
