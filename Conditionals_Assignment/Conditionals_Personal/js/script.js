@@ -42,6 +42,7 @@ var reps = prompt("Please enter the number of perfect repetitions you can perfor
 
 var tooHeavy = reps <= 3;
 var tooLight = reps > 20;
+var justRight = reps >= 4 && reps <= 20;
 
 var heavyReduction = .10
 var lightIncrease = .20
@@ -54,6 +55,7 @@ if(tooHeavy){
 }else if(tooLight){
 	var perfectWeight = Number(currentWeight) + Number(currentWeight)*Number(lightIncrease);
 	console.log("You can do " + reps + " reps at " + currentWeight + "lbs, that's lightweight for you! Looks like you need to go heavier! Try " + perfectWeight + "lbs.");
-}else{
-	console.log("You are lifting " + currentWeight + "lbs for " + reps + " reps, which means this weight is perfect!");
+}else if(justRight){
+	var perfectWeight = currentWeight;
+	console.log("You are lifting " + currentWeight + "lbs for " + reps + " reps, which means this weight is just right!");
 }
