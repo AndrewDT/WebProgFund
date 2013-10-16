@@ -39,26 +39,26 @@ Result: "You are lifting xlbs for x reps, which means this weight is perfect!", 
 
 var currentWeight = prompt("Please enter the current weight you are lifting (in lbs)");
 if(currentWeight === ""){
-	var emptyWeightField = prompt("NOTE: CURRENT WEIGHT MUST BE ENTERED FOR A CORRECT WEIGHT DETERMINATION");
+	var emptyWeightField = prompt("NOTE: CURRENT WEIGHT MUST BE ENTERED FOR A CORRECT IDEAL WEIGHT DETERMINATION");
 }
 var reps = prompt("Please enter the number of perfect repetitions you can perform at your current weight load");
+if(reps === ""){
+	var emptyRepsField = prompt("NOTE: REPETITIONS AMOUNT MUST BE ENTERED FOR A CORRECT IDEAL WEIGHT DETERMINATION");
+}
 
-var tooHeavy = reps <= 3;
-var tooLight = reps > 20;
-var justRight = reps >= 4 && reps <= 20;
 
 var heavyReduction = .10;
 var lightIncrease = .20;
 
 var perfectWeight;
 
-if(tooHeavy){
+if(reps <= 3 || emptyRepsField <= 3){
 	var perfectWeight = currentWeight - currentWeight*heavyReduction || emptyWeightField - emptyWeightField*heavyReduction;
-	console.log("Sorry, you can only do " + reps + " reps at " + currentWeight + emptyWeightField + "lbs, so the weight is too heavy for you right now! Try " + perfectWeight + "lbs.");
-}else if(tooLight){
+	console.log("Sorry, you can only do " + (reps || emptyRepsField) + " reps at " + (currentWeight || emptyWeightField) + "lbs, so the weight is too heavy for you right now! Try " + perfectWeight + "lbs.");
+}else if(reps > 20 || emptyRepsField > 20){
 	var perfectWeight = Number(currentWeight) + Number(currentWeight)*Number(lightIncrease) || Number(emptyWeightField) + Number(emptyWeightField)*Number(lightIncrease);
-	console.log("You can do " + reps + " reps at " + currentWeight + emptyWeightField + "lbs, that's lightweight for you! Looks like you need to go heavier! Try " + perfectWeight + "lbs.");
-}else if(justRight){
+	console.log("You can do " + (reps || emptyRepsField) + " reps at " + (currentWeight || emptyWeightField) + "lbs, that's lightweight for you! Looks like you need to go heavier! Try " + perfectWeight + "lbs.");
+}else if((reps >= 4 && reps <= 20) || (emptyRepsField >= 4 && emptyRepsField <= 20)){
 	var perfectWeight = currentWeight || emptyWeightField;
-	console.log("You are lifting " + currentWeight + emptyWeightField + "lbs for " + reps + " reps, which means this weight is just right!");
+	console.log("You are lifting " + perfectWeight + "lbs for " + (reps || emptyRepsField) + " reps, which means this weight is just right!");
 }
