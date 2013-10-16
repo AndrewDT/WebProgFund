@@ -51,4 +51,7 @@ var perfectWeight;
 if(tooHeavy){
 	var perfectWeight = currentWeight - currentWeight*heavyReduction;
 	console.log("Sorry you can only do " + reps + " reps at " + currentWeight + "lbs, so the weight is too heavy for you right now!");
+}else if(tooLight){
+	var perfectWeight = currentWeight + currentWeight*tooLight;
+	console.log("You can do " + reps + " reps at " + currentWeight + "lbs, that's lightweight for you! Looks like you need to go heavier!");
 }
