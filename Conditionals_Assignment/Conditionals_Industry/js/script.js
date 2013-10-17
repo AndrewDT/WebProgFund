@@ -38,30 +38,34 @@ Free Movie Days
 Result: "Based on your X number of new releases and X number of dollar movies, your total rental price equals $X." or "Based on your X number of new releases, X number of dollar movies, and because you are renting on a discount day, your total rental price equals $X"
 */
 
-var newRelease = 2.99;
-var dollarMovie = 1.07;
+var newRelease = 2.99;// Variable to hold the assigned value of the price of each new release
+var dollarMovie = 1.07;// Variable to hold the assigned value of the price of each dollar movie rental
 
-var newReleaseRentals = prompt("Please enter the total number of new releases you are renting.");
-if(newReleaseRentals === ""){
-	newReleaseRentals = prompt("NUMBER OF NEW RELEASE RENTALS MUST BE ENTERED FOR AN ACCURATE TOTAL");
+var newReleaseRentals = prompt("Please enter the total number of new releases you are renting.");//Variable assigned a prompt to gather the user's number of new releases
+//if newReleaseRentals is strictly equal to " (empty field)" run the condition
+if(newReleaseRentals === ""){//A condition set to give newReleaseRentals a value and new prompt with all capital letters to remind the user to input a valid value if true
+	newReleaseRentals = prompt("NUMBER OF NEW RELEASE RENTALS MUST BE ENTERED FOR AN ACCURATE TOTAL");//Assigns a new prompt value to newReleaseRentals if the condition is true
 }
-var dollarMovieRentals = prompt("Please enter the total number of dollar movies you are renting.");
-if(dollarMovieRentals === ""){
-	dollarMovieRentals = prompt("NUMBER OF DOLLAR MOVIE RENTALS MUST BE ENTERED FOR AN ACCURATE TOTAL");
+var dollarMovieRentals = prompt("Please enter the total number of dollar movies you are renting.");// Variable assigned a prompt to gather the user's number of dollar movie rentals'
+//if dollarMovieRentals is strictly equal to " (empty field)" run the condition
+if(dollarMovieRentals === ""){//A statement set to give dollarMovieRentals a value and new prompt with all capital letters to remind the user to input a valid value if true
+	dollarMovieRentals = prompt("NUMBER OF DOLLAR MOVIE RENTALS MUST BE ENTERED FOR AN ACCURATE TOTAL");//Assigns a new prompt value to dollarMovieRentals if the condition is true
 }
-var totalRentals = Number(newReleaseRentals) + Number(dollarMovieRentals);
-var rentalDay = prompt("Please enter the day of the week you are renting. \n Ex. Sunday would be the input: 1");
-if(rentalDay === "" || rentalDay > 7){
-	var rentalDay = prompt("VALID RENTAL DAY MUST BE ENTERED FOR AN ACCURATE TOTAL \n Ex. Sunday would be the input: 1");
+var totalRentals = Number(newReleaseRentals) + Number(dollarMovieRentals);//Variable set to hold the expression and results of total rentals
+var rentalDay = prompt("Please enter the day of the week you are renting. \n Ex. Sunday would be the input: 1");// Variable assigned a prompt to gather the day the user is renting their movies
+//if rentalDay is strictly equal to " (empty field)" OR greater than 7, run the condition
+if(rentalDay === "" || rentalDay > 7){//A condition set to give rentalDay a value and new prompt with all capital letters to remind the user to input a valid value if true
+	var rentalDay = prompt("VALID RENTAL DAY MUST BE ENTERED FOR AN ACCURATE TOTAL \n Ex. Sunday would be the input: 1");//Assigns a new prompt to gather the day the user is renting their movies if the condition is true
 }
 
 
-var rentalPrice = newReleaseRentals*newRelease + dollarMovieRentals*dollarMovie;
-var discountPrice = newReleaseRentals*newRelease;
+var rentalPrice = newReleaseRentals*newRelease + dollarMovieRentals*dollarMovie;//Variable assigned an expression that calculates and holds the user's rental price value
+var discountPrice = newReleaseRentals*newRelease;//Variable assigned an expression that calculates and holds the user's rental price value at with the discount
 
-if(rentalDay >= 3 && rentalDay <= 5){
-	console.log("Based on your " + newReleaseRentals + " number of new releases, " + dollarMovieRentals + " number of dollar movies, and because you are renting on a discount day, your total rental price equals $" + discountPrice);
-}else{
-	console.log("Based on your " + newReleaseRentals + " new releases and " + dollarMovieRentals + " number of dollar movies, your total rental price equals $" + rentalPrice);
+//if rentalDay is greater than or equal to 3 AND less than or equal to 5 run the condition
+if(rentalDay >= 3 && rentalDay <= 5){//A condition that if true, runs a print result to console
+	console.log("Based on your " + newReleaseRentals + " number of new releases, " + dollarMovieRentals + " number of dollar movies, and because you are renting on a discount day, your total rental price equals $" + discountPrice);//Prints the result to console if the condition is true
+}else{//condition set to happen any time the first condition is false
+	console.log("Based on your " + newReleaseRentals + " new releases and " + dollarMovieRentals + " number of dollar movies, your total rental price equals $" + rentalPrice);//Prints the result to console any time the first condition is false
 }
 

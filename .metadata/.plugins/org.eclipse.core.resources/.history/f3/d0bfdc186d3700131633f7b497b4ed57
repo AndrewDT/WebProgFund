@@ -58,8 +58,8 @@ var lightIncrease = .20;// Variable assigned to hold the value by which a tooLig
 
 var perfectWeight;// Variable established for use in the later statements
 
-
-if(tooLight){//A statement set to give perfectWeight a value and print to console the result if tooLight is true
+//A statement set to give perfectWeight a value and print to console the result if tooLight is true
+if(tooLight){
 	var perfectWeight = Number(currentWeight) + Number(currentWeight)*Number(lightIncrease);//Assigns the perfectWeight variable a value using a given expression if the tooLight statement is true
 	console.log("You can do " + reps + " reps at " + currentWeight + "lbs, that's lightweight for you! Looks like you need to go heavier! Try " + perfectWeight+"lbs");//Prints the result to console if tooLight is true
 }else if(justRight){//A statement set to give perfectWeight a value and print to console the result if justRight is true
