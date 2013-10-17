@@ -46,6 +46,6 @@ var freeMovieDays = ["Tuesday", "Wednesday", "Thursday"];
 var newReleaseRentals = prompt("Please enter the total number of new releases you are renting.");
 var dollarMovieRentals = prompt("Please enter the total number of dollar movies you are renting.");
 var totalRentals = Number(newReleaseRentals) + Number(dollarMovieRentals);
-var rentalDay = prompt("Please enter the day of the week you are renting your movies.");
+console.log(totalRentals);
 
 

@@ -37,15 +37,3 @@ Free Movie Days
 
 Result: "Based on your X number of new release and X number of dollar movies, your total rental price equals $X." or "Based on your X number of new releases, X number of dollar movies, and because it is X today, your total rental price equals $X"
 */
-
-var newRelease = 2.99;
-var dollarMovie = 1.00;
-var normalDays = ["Friday", "Saturday", "Sunday", "Monday"];
-var freeMovieDays = ["Tuesday", "Wednesday", "Thursday"];
-
-var newReleaseRentals = prompt("Please enter the total number of new releases you are renting.");
-var dollarMovieRentals = prompt("Please enter the total number of dollar movies you are renting.");
-var totalRentals = Number(newReleaseRentals) + Number(dollarMovieRentals);
-var rentalDay = prompt("Please enter the day of the week you are renting your movies.");
-
-
