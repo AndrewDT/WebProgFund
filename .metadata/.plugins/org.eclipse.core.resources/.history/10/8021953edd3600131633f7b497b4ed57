@@ -52,9 +52,9 @@ var rentalDays = prompt("Please enter the day of the week you are renting your m
 var rentalPrice = newReleaseRentals*newRelease + dollarMovieRentals*dollarMovie;
 var discountPrice = newReleaseRentals*newRelease;
 
-if(freeMovieDays){
-	console.log("Based on your " + newReleaseRentals + " number of new releases, " + dollarMovieRentals + " number of dollar movies, and because it is " + rentalDays + " today, your total rental price equals $" + discountPrice);
-}else if(normalDays){
+if(normalDays){
 	console.log("Based on your " + newReleaseRentals + " new releases and " + dollarMovieRentals + " number of dollar movies, your total rental price equals $" + rentalPrice);
+}else if(freeMovieDays){
+	console.log("Based on your " + newReleaseRentals + " number of new releases, " + dollarMovieRentals + " number of dollar movies, and because it is " + rentalDays + " today, your total rental price equals $" + discountPrice);
 }
 

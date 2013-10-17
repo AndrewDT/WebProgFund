@@ -54,7 +54,8 @@ var discountPrice = newReleaseRentals*newRelease;
 
 if(freeMovieDays){
 	console.log("Based on your " + newReleaseRentals + " number of new releases, " + dollarMovieRentals + " number of dollar movies, and because it is " + rentalDays + " today, your total rental price equals $" + discountPrice);
-}else if(normalDays){
+}
+else if(normalDays){
 	console.log("Based on your " + newReleaseRentals + " new releases and " + dollarMovieRentals + " number of dollar movies, your total rental price equals $" + rentalPrice);
 }
 

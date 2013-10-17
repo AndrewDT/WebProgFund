@@ -35,7 +35,7 @@ Dollar Movies
 Normal Price Days
 Free Movie Days
 
-Result: "Based on your X number of new releases and X number of dollar movies, your total rental price equals $X." or "Based on your X number of new releases, X number of dollar movies, and because it is X today, your total rental price equals $X"
+Result: "Based on your X number of new release and X number of dollar movies, your total rental price equals $X." or "Based on your X number of new releases, X number of dollar movies, and because it is X today, your total rental price equals $X"
 */
 
 var newRelease = 2.99;
@@ -46,15 +46,8 @@ var freeMovieDays = ["Tuesday", "Wednesday", "Thursday"];
 var newReleaseRentals = prompt("Please enter the total number of new releases you are renting.");
 var dollarMovieRentals = prompt("Please enter the total number of dollar movies you are renting.");
 var totalRentals = Number(newReleaseRentals) + Number(dollarMovieRentals);
-var rentalDays = prompt("Please enter the day of the week you are renting your movies.");
-
+var rentalDay = prompt("Please enter the day of the week you are renting your movies.");
 
 var rentalPrice = newReleaseRentals*newRelease + dollarMovieRentals*dollarMovie;
-var discountPrice = newReleaseRentals*newRelease;
-
-if(freeMovieDays){
-	console.log("Based on your " + newReleaseRentals + " number of new releases, " + dollarMovieRentals + " number of dollar movies, and because it is " + rentalDays + " today, your total rental price equals $" + discountPrice);
-}else if(normalDays){
-	console.log("Based on your " + newReleaseRentals + " new releases and " + dollarMovieRentals + " number of dollar movies, your total rental price equals $" + rentalPrice);
-}
+console.log(rentalPrice);
 
