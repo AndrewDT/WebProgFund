@@ -39,7 +39,7 @@ Result: "You are lifting xlbs for x reps, which means this weight is perfect!", 
 
 var currentWeight = prompt("Please enter the current weight you are lifting (in lbs)");
 if(currentWeight === ""){
-	currentWeight = prompt("NOTE: CURRENT WEIGHT MUST BE ENTERED FOR A CORRECT IDEAL WEIGHT DETERMINATION");
+	currenWeight = prompt("NOTE: CURRENT WEIGHT MUST BE ENTERED FOR A CORRECT IDEAL WEIGHT DETERMINATION");
 }
 var reps = prompt("Please enter the number of perfect repetitions you can perform at your current weight load");
 if(reps === ""){
