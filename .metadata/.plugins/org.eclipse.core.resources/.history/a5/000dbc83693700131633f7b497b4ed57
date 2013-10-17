@@ -60,12 +60,12 @@ var perfectWeight;// Variable established for use in the later statements
 
 //A statement set to give perfectWeight a value and print to console the result if tooLight is true
 if(tooLight){
-	var perfectWeight = Number(currentWeight) + Number(currentWeight)*Number(lightIncrease);//Assigns the perfectWeight variable a value using a given expression if the tooLight statement is true
-	console.log("You can do " + reps + " reps at " + currentWeight + "lbs, that's lightweight for you! Looks like you need to go heavier! Try " + perfectWeight+"lbs");//Prints the result to console if tooLight is true
+	var perfectWeight = Number(currentWeight) + Number(currentWeight)*Number(lightIncrease);
+	console.log("You can do " + reps + " reps at " + currentWeight + "lbs, that's lightweight for you! Looks like you need to go heavier! Try " + perfectWeight+"lbs");
 }else if(justRight){//A statement set to give perfectWeight a value and print to console the result if justRight is true
-	var perfectWeight = currentWeight;//Assigns the perfectWeight variable a value using a given variable if the justRight statement is true
-	console.log("You are lifting " + perfectWeight + "lbs for " + reps + " reps, which means this weight is just right!");//Prints the result to console if justRight is true
+	var perfectWeight = currentWeight;
+	console.log("You are lifting " + perfectWeight + "lbs for " + reps + " reps, which means this weight is just right!");
 }else if(tooHeavy){//A statement set to give perfectWeight a value and print to console the result if tooHeavy is true
-		var perfectWeight = Number(currentWeight) - Number(currentWeight)*Number(lightIncrease);//Assigns the perfectWeight variable a value using the given expression if tooHeavy is true
-			console.log("Sorry, you can only do " + reps + " reps at " + currentWeight + "lbs, right now. Try " + perfectWeight + "lbs.");//Prints the result to console if tooHeavy is true
+		var perfectWeight = Number(currentWeight) - Number(currentWeight)*Number(lightIncrease);
+			console.log("Sorry, you can only do " + reps + " reps at " + currentWeight + "lbs, right now. Try " + perfectWeight + "lbs.");
 }
