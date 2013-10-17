@@ -36,19 +36,16 @@ Minutes til recharge
 Result: "Yes, with X previously stored blasts and given X minutes, Iron Man can defeat the Crimson Dynamo!" or "No, with X previously stored blasts and given X minutes, Iron Man will lose to the Crimson Dynamo!"
 */
 
-var blastsNeeded = 255;//Variable assigned to hold the value of blasts needed to defeat Crimson Dynamo
-var blastRechargeRate = 6.3;//Variable assigned to hold the value for Iron Man's blast recharge rate
-var previousEnergy = prompt("Please enter the amount of energy Iron Man stored prior to the fight with Dynamo \n(Cannot exceed 50)");//Variable assigned a prompt to gather Iron Man's prior stored energy as inputted by the user
-//if previousEnergy is greater than 50 OR previousEnergy is strictly equal to " (empty field)" then run the condition
-if(previousEnergy > 50 || previousEnergy === ""){//Declares a condition for the if statement
-	previousEnergy = prompt("IRON MAN CANNOT STORE MORE THAN 50 BLASTS WORTH OF ENERGY! \nPLEASE ENTER ANOTHER NUMBER");//Assigns a new prompt value to previousEnergy with capital letters to get the user's attention if the condition is true
+var blastsNeeded = 255;
+var blastRechargeRate = 6.3;
+var previousEnergy = prompt("Please enter the amount of energy Iron Man stored prior to the fight with Dynamo \n(Cannot exceed 50)");
+if(previousEnergy > 50 || previousEnergy === ""){
+	previousEnergy = prompt("IRON MAN CANNOT STORE MORE THAN 50 BLASTS WORTH OF ENERGY! \nPLEASE ENTER ANOTHER NUMBER");
 }
-var chargeTime = prompt("Please enter the amount of time Iron Man has during the fight to charge in between blasts \n(In minutes)");//Variable assigned a prompt to gather how much charge time Iron Man has during the fight as inputted by the user
-//if chargeTime is strictly equal to "" (empty field) then run the condition
-if(chargeTime === ""){//Declares a condition for the if statement
-	chargeTime = prompt("PLEASE ENTER HOW MUCH TIME IRON MAN HAS TO CHARGE MID-FIGHT! \n(IN MINUTES)");//Assigns a new prompt value to chargeTime with capital letters to get the user's attention if the condition is true
+var chargeTime = prompt("Please enter the amount of time Iron Man has during the fight to charge in between blasts \n(In minutes)");
+if(chargeTime === ""){
+	chargeTime = prompt("PLEASE ENTER HOW MUCH TIME IRON MAN HAS TO CHARGE MID-FIGHT! \n(IN MINUTES)");
 }
-var totalEnergy = Number(previousEnergy) + Number(chargeTime)/blastRechargeRate*15;//Variable set to hold the expression and result of total energy Iron Man would have based on user inputs and the formula
+var totalEnergy = Number(previousEnergy) + Number(chargeTime)/blastRechargeRate*15;
 
-//Ternary set to shorten conditional declaration. If the condition is true, it prints to console the first value, if false, it prints to console the second value
 (totalEnergy >= blastsNeeded) ? console.log("Yes, with " + previousEnergy + " previously stored blasts and given " + chargeTime + " minutes, Iron Man can defeat the Crimson Dynamo!") : console.log("No, with " + previousEnergy + " previously stored blasts and given " + chargeTime + " minutes, Iron Man will lose to the Crimson Dynamo!");
