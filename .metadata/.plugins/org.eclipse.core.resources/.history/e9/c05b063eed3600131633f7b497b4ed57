@@ -35,25 +35,16 @@ Dollar Movies
 Normal Price Days
 Free Movie Days
 
-Result: "Based on your X number of new releases and X number of dollar movies, your total rental price equals $X." or "Based on your X number of new releases, X number of dollar movies, and because you are renting on a discount day, your total rental price equals $X"
+Result: "Based on your X number of new releases and X number of dollar movies, your total rental price equals $X." or "Based on your X number of new releases, X number of dollar movies, and because it is X today, your total rental price equals $X"
 */
 
 var newRelease = 2.99;
 var dollarMovie = 1.07;
 
 var newReleaseRentals = prompt("Please enter the total number of new releases you are renting.");
-if(newReleaseRentals === ""){
-	newReleaseRentals = prompt("NUMBER OF NEW RELEASE RENTALS MUST BE ENTERED FOR AN ACCURATE TOTAL");
-}
 var dollarMovieRentals = prompt("Please enter the total number of dollar movies you are renting.");
-if(dollarMovieRentals === ""){
-	dollarMovieRentals = prompt("NUMBER OF DOLLAR MOVIE RENTALS MUST BE ENTERED FOR AN ACCURATE TOTAL");
-}
 var totalRentals = Number(newReleaseRentals) + Number(dollarMovieRentals);
 var rentalDay = prompt("Please enter the day of the week you are renting. \n Ex. Sunday would be the input: 1");
-if(rentalDay === ""){
-	var rentalDay = prompt("RENTAL DAY MUST BE ENTERED FOR AN ACCURATE TOTAL \n Ex. Sunday would be the input: 1");
-}
 
 
 var rentalPrice = newReleaseRentals*newRelease + dollarMovieRentals*dollarMovie;

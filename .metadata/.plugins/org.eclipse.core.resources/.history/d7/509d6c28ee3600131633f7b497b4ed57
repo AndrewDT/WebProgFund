@@ -35,7 +35,7 @@ Dollar Movies
 Normal Price Days
 Free Movie Days
 
-Result: "Based on your X number of new releases and X number of dollar movies, your total rental price equals $X." or "Based on your X number of new releases, X number of dollar movies, and because you are renting on a discount day, your total rental price equals $X"
+Result: "Based on your X number of new releases and X number of dollar movies, your total rental price equals $X." or "Based on your X number of new releases, X number of dollar movies, and because it is X today, your total rental price equals $X"
 */
 
 var newRelease = 2.99;
