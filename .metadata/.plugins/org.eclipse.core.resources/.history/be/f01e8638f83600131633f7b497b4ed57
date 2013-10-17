@@ -26,26 +26,22 @@ You are required to make at least 20 commits to your repository for each project
 Failing to do so will result in a 0 for the assignment.
 
 Problem:
-Iron Man uses roughly 255 phase blasts to take down the Crimson Dynamo. Give he can only store up enough energy for 50 blasts at a time, and it takes 6.3 minutes to recharge 15 blasts, calculate if he can defeat the Crimson Dynamo given X minutes and X previously stored energy.
+Iron Man uses roughly 255 phase blasts to take down the Crimson Dynamo. Give he can only store up enough energy for 50 blasts at a time, and it takes 6.3 minutes to recharge back to 50 blasts, calculate if he can defeat the Crimson Dynamo given X time and X previously stored energy.
 
 Givens:
 Phase Blasts needed
 Maximum stored energy
 Minutes til recharge
 
-Result: "Yes, with X previously stored blasts and given X minutes, Iron Man can defeat the Crimson Dynamo!" or "No, with X previously stored blasts and given X minutes, Iron Man will lose to the Crimson Dynamo!"
+Result: "Yes, with X previously stored blasts and given X time, Iron Man can defeat the Crimson Dynamo!" or "No, with X previously stored blasts and given X time, Iron Man will lose to the Crimson Dynamo!"
 */
 
 var blastsNeeded = 255;
-var blastRechargeRate = 6.3;
 var previousEnergy = prompt("Please enter the amount of energy Iron Man stored prior to the fight with Dynamo \n(Cannot exceed 50)");
 if(previousEnergy > 50 || previousEnergy === ""){
 	previousEnergy = prompt("IRON MAN CANNOT STORE MORE THAN 50 BLASTS WORTH OF ENERGY! \nPLEASE ENTER ANOTHER NUMBER");
 }
-var chargeTime = prompt("Please enter the amount of time Iron Man has during the fight to charge in between blasts \n(In minutes)");
+var chargeTime = prompt("Please enter the amount of time Iron Man has during the fight to charge in between blasts");
 if(chargeTime === ""){
-	chargeTime = prompt("PLEASE ENTER HOW MUCH TIME IRON MAN HAS TO CHARGE MID-FIGHT! \n(IN MINUTES)");
+	chargeTime = prompt("PLEASE ENTER HOW MUCH TIME IRON MAN HAS TO CHARGE MID-FIGHT!");
 }
-var totalEnergy = Number(previousEnergy) + Number(chargeTime)/blastRechargeRate*15;
-
-(totalEnergy >= blastsNeeded) ? console.log("Yes, with " + previousEnergy + " previously stored blasts and given " + chargeTime + " minutes, Iron Man can defeat the Crimson Dynamo!") : console.log("No, with " + previousEnergy + " previously stored blasts and given " + chargeTime + " minutes, Iron Man will lose to the Crimson Dynamo!");
