@@ -50,7 +50,7 @@ var rentalDay = prompt("Please enter the day of the week you are renting. \n Ex.
 var rentalPrice = newReleaseRentals*newRelease + dollarMovieRentals*dollarMovie;
 var discountPrice = newReleaseRentals*newRelease;
 
-if(rentalDay >= 3 && rentalDay <= 5){
+if(rentalDay === tuesday || wednesday || thursday){
 	console.log("Based on your " + newReleaseRentals + " number of new releases, " + dollarMovieRentals + " number of dollar movies, and because you are renting on a discount day, your total rental price equals $" + discountPrice);
 }else{
 	console.log("Based on your " + newReleaseRentals + " new releases and " + dollarMovieRentals + " number of dollar movies, your total rental price equals $" + rentalPrice);

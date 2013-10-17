@@ -40,19 +40,21 @@ Result: "Based on your X number of new releases and X number of dollar movies, y
 
 var newRelease = 2.99;
 var dollarMovie = 1.07;
+var normalDays = ["Friday", "Saturday", "Sunday", "Monday"];
+var freeMovieDays = ["Tuesday", "Wednesday", "Thursday"];
 
 var newReleaseRentals = prompt("Please enter the total number of new releases you are renting.");
 var dollarMovieRentals = prompt("Please enter the total number of dollar movies you are renting.");
 var totalRentals = Number(newReleaseRentals) + Number(dollarMovieRentals);
-var rentalDay = prompt("Please enter the day of the week you are renting. \n Ex. Sunday would be the input: 1");
+var rentalDays = prompt("Please enter the day of the week you are renting your movies.");
 
 
 var rentalPrice = newReleaseRentals*newRelease + dollarMovieRentals*dollarMovie;
 var discountPrice = newReleaseRentals*newRelease;
 
-if(rentalDay >= 3 && rentalDay <= 5){
-	console.log("Based on your " + newReleaseRentals + " number of new releases, " + dollarMovieRentals + " number of dollar movies, and because you are renting on a discount day, your total rental price equals $" + discountPrice);
-}else{
+if(freeMovieDays[0], freeMovieDays[1], freeMovieDays[2]){
+	console.log("Based on your " + newReleaseRentals + " number of new releases, " + dollarMovieRentals + " number of dollar movies, and because it is " + rentalDays + " today, your total rental price equals $" + discountPrice);
+}else if(normalDays){
 	console.log("Based on your " + newReleaseRentals + " new releases and " + dollarMovieRentals + " number of dollar movies, your total rental price equals $" + rentalPrice);
 }
 
