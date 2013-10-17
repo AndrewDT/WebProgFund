@@ -26,13 +26,9 @@ You are required to make at least 20 commits to your repository for each project
 Failing to do so will result in a 0 for the assignment.
 
 Problem:
-Iron Man uses roughly 255 phase blasts to take down the Crimson Dynamo. Give he can only store up enough energy for 50 blasts at a time, and it takes 6.3 minutes to recharge back to 50 blasts, calculate if he can defeat the Crimson Dynamo given X time and X previously stored energy.
 
 Givens:
-Phase Blasts needed
-Maximum stored energy
-Minutes til recharge
 
-Result: "Yes, with X previously stored blasts and given X time, Iron Man can defeat the Crimson Dynamo!" or "No, with X previously stored blasts and given X time, Iron Man will lose to the Crimson Dynamo!"
+
+Result:
 */
-
