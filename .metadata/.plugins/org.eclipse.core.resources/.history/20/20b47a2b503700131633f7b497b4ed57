@@ -51,8 +51,8 @@ if(dollarMovieRentals === ""){
 }
 var totalRentals = Number(newReleaseRentals) + Number(dollarMovieRentals);
 var rentalDay = prompt("Please enter the day of the week you are renting. \n Ex. Sunday would be the input: 1");
-if(rentalDay === "" || rentalDay > 7){
-	var rentalDay = prompt("VALID RENTAL DAY MUST BE ENTERED FOR AN ACCURATE TOTAL \n Ex. Sunday would be the input: 1");
+if(rentalDay === "" || rentalDay > 8){
+	var rentalDay = prompt("RENTAL DAY MUST BE ENTERED FOR AN ACCURATE TOTAL \n Ex. Sunday would be the input: 1");
 }
 
 
