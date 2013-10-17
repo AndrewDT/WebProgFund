@@ -66,6 +66,6 @@ if(tooLight){
 	var perfectWeight = currentWeight;//Assigns the perfectWeight variable a value using a given variable if the justRight statement is true
 	console.log("You are lifting " + perfectWeight + "lbs for " + reps + " reps, which means this weight is just right!");//Prints the result to console if justRight is true
 }else if(tooHeavy){//A statement set to give perfectWeight a value and print to console the result if tooHeavy is true
-		var perfectWeight = currentWeight - currentWeight*lightIncrease;//Assigns the perfectWeight variable a value using the given expression if tooHeavy is true
+		var perfectWeight = Number(currentWeight) - Number(currentWeight)*Number(lightIncrease);//Assigns the perfectWeight variable a value using the given expression if tooHeavy is true
 			console.log("Sorry, you can only do " + reps + " reps at " + currentWeight + "lbs, right now. Try " + perfectWeight + "lbs.");//Prints the result to console if tooHeavy is true
 }
