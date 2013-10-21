@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="22" version="2.0">
+<workbench progressCount="49" version="2.0">
 <workbenchAdvisor/>
-<window height="874" width="488" x="0" y="22">
+<window height="841" width="1440" x="7" y="62">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -11,7 +11,7 @@
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="106" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="114" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="97" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="68" y="22"/>
 <coolItem id="com.aptana.ui.globalActionSet" itemType="typeToolBarContribution" x="150" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
@@ -21,7 +21,7 @@
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.js" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.css" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.aptana.editor.html" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.html" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -30,18 +30,15 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="com.aptana.editor.html" name="index.html" partName="index.html" title="index.html" tooltip="/Users/AndrewDTillett/Desktop/CSS3 2/index.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Users/AndrewDTillett/Desktop/CSS3%202/index.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
 </editors>
 <views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
 <view id="com.aptana.snippets.ui.views.SnippetsView" partName="Snippets"/>
 <view id="com.aptana.terminal.views.terminal" partName="Terminal">
 <viewState>
@@ -66,10 +63,16 @@
 <viewState/>
 </view>
 <view id="com.aptana.explorer.view" partName="App Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled=""/>
+<viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="Conditionals_Assignment">
+<project name="Conditionals_Assignment">
+<selection>
+<element path="/Conditionals_Assignment"/>
+</selection>
+</project>
+</viewState>
 </view>
 </views>
-<perspectives activePart="com.aptana.editor.html" activePerspective="com.aptana.ui.WebPerspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="com.aptana.ui.WebPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.aptana.ui.internal.WebPerspectiveFactory" id="com.aptana.ui.WebPerspective" label="Web"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
@@ -115,14 +118,17 @@
 <view id="com.aptana.samples.ui.SamplesView"/>
 <view id="com.aptana.snippets.ui.views.SnippetsView"/>
 <view id="com.aptana.explorer.view"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="com.aptana.ui.io.remoteview" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="894" ratioRight="298" relationship="2" relative="left">
@@ -132,7 +138,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.35260117" ratioLeft="183" ratioRight="336" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.17004898" ratioLeft="243" ratioRight="1186" relationship="2" relative="left"/>
 <info folder="true" part="terminalArea" ratio="0.74938875" ratioLeft="613" ratioRight="205" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -171,164 +177,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Expressions_Personal/js/script.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Expressions_Industry/js/script.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Expressions_Wacky/js/script.js"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/Users/AndrewDTillett/Desktop/CSS3%202/index.html"/>
-</editors>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position/>
-</item>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position info="not_deleted" x="47" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position info="not_deleted" x="223" y="93"/>
-</item>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position info="not_deleted" x="1969" y="124"/>
-</item>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position info="not_deleted" x="1846" y="106"/>
-</item>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position info="not_deleted" x="1969" y="124"/>
-</item>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position/>
-</item>
-<item historyLabel="script.js" index="0">
-<position info="not_deleted" x="2115" y="119"/>
-</item>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position info="not_deleted" x="2115" y="119"/>
-</item>
-<item historyLabel="script.js | Expressions_Wacky" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position info="not_deleted" x="220" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Wacky" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position info="not_deleted" x="220" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Wacky" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position info="not_deleted" x="220" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position info="not_deleted" x="445" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Wacky" index="2">
-<position info="not_deleted" x="546" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position info="not_deleted" x="352" y="93"/>
-</item>
-<item historyLabel="script.js | Expressions_Wacky" index="2">
-<position info="not_deleted" x="2517" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position info="not_deleted" x="2186" y="119"/>
-</item>
-<item historyLabel="script.js | Expressions_Wacky" index="2">
-<position info="not_deleted" x="2674" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position info="not_deleted" x="2321" y="137"/>
-</item>
-<item historyLabel="script.js | Expressions_Wacky" index="2">
-<position info="not_deleted" x="2844" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position info="not_deleted" x="2479" y="132"/>
-</item>
-<item historyLabel="script.js | Expressions_Wacky" index="2">
-<position info="not_deleted" x="2844" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position info="not_deleted" x="2306" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position info="not_deleted" x="2094" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Wacky" index="2">
-<position info="not_deleted" x="2844" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position info="not_deleted" x="2306" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Wacky" index="2">
-<position info="not_deleted" x="2844" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position info="not_deleted" x="1969" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Wacky" index="2">
-<position info="not_deleted" x="2844" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Industry" index="1">
-<position info="not_deleted" x="2306" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Personal" index="0">
-<position info="not_deleted" x="1969" y="0"/>
-</item>
-<item historyLabel="script.js" index="1">
-<position info="not_deleted" x="2306" y="0"/>
-</item>
-<item historyLabel="script.js | Expressions_Wacky" index="2">
-<position info="not_deleted" x="2844" y="0"/>
-</item>
-<item historyLabel="script.js" index="1">
-<position info="not_deleted" x="2306" y="0"/>
-</item>
-<item active="true" historyLabel="index.html" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -336,9 +185,8 @@
 <trimLayout>
 <trimArea IMemento.internal.id="16384">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@36bb87"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@3c644"/>
+<trimItem IMemento.internal.id="left"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -352,50 +200,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="/Users/AndrewDTillett/Desktop/CSS3 2/index.html">
-<persistable uri="file:/Users/AndrewDTillett/Desktop/CSS3%202/index.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Conditionals_Assignment/Conditionals_Personal/js/script.js">
+<persistable path="/Conditionals_Assignment/Conditionals_Personal/js/script.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Expressions_Industry/js/script.js">
-<persistable path="/Expressions_Industry/js/script.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Conditionals_Assignment/Conditionals_Industry/js/script.js">
+<persistable path="/Conditionals_Assignment/Conditionals_Industry/js/script.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Expressions_Wacky/js/script.js">
-<persistable path="/Expressions_Wacky/js/script.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Conditionals_Assignment/Conditionals_Wacky/js/script.js">
+<persistable path="/Conditionals_Assignment/Conditionals_Wacky/js/script.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Expressions_Personal/js/script.js">
-<persistable path="/Expressions_Personal/js/script.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Expressions_Wacky/index.html">
-<persistable path="/Expressions_Wacky/index.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Expressions_Personal/index.html">
-<persistable path="/Expressions_Personal/index.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Expressions_Industry/index.html">
-<persistable path="/Expressions_Industry/index.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Conditionals_Assignment/Conditionals_Wacky/index.html">
+<persistable path="/Conditionals_Assignment/Conditionals_Wacky/index.html"/>
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="/Users/AndrewDTillett/WebProgFund/Expressions Screencast Projects/js/script.js">
 <persistable uri="file:/Users/AndrewDTillett/WebProgFund/Expressions%20Screencast%20Projects/js/script.js"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="/Users/AndrewDTillett/WebProgFund/Prompt &amp; Alert Screencast Project/js/script.js">
-<persistable uri="file:/Users/AndrewDTillett/WebProgFund/Prompt%20&amp;%20Alert%20Screencast%20Project/js/script.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Conditionals_Assignment/Conditionals_Industry/index.html">
+<persistable path="/Conditionals_Assignment/Conditionals_Industry/index.html"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="/Users/AndrewDTillett/WebProgFund/Expressions_Personal/index.html">
-<persistable uri="file:/Users/AndrewDTillett/WebProgFund/Expressions_Personal/index.html"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="/Users/AndrewDTillett/WebProgFund/Conditionals_Assignment/Conditionals_Personal/index.html">
+<persistable uri="file:/Users/AndrewDTillett/WebProgFund/Conditionals_Assignment/Conditionals_Personal/index.html"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="/Users/AndrewDTillett/WebProgFund/Prompt &amp; Alert Screencast Project/index.html">
-<persistable uri="file:/Users/AndrewDTillett/WebProgFund/Prompt%20&amp;%20Alert%20Screencast%20Project/index.html"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="/Users/AndrewDTillett/WebProgFund/Conditionals_Assignment/Conditionals_Personal/js/script.js">
+<persistable uri="file:/Users/AndrewDTillett/WebProgFund/Conditionals_Assignment/Conditionals_Personal/js/script.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Expressions_worksheet/Slices_of_pie_1/js/script.js">
-<persistable path="/Expressions_worksheet/Slices_of_pie_1/js/script.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Conditionals_worksheet/Group_3_movie_ticket_price/js/script.js">
+<persistable path="/Conditionals_worksheet/Group_3_movie_ticket_price/js/script.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Expressions_worksheet/Slices_of_pie_2/js/script.js">
-<persistable path="/Expressions_worksheet/Slices_of_pie_2/js/script.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Conditionals_worksheet/Group_2_check_the_login/js/script.js">
+<persistable path="/Conditionals_worksheet/Group_2_check_the_login/js/script.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Expressions_worksheet/Discounts/js/script.js">
-<persistable path="/Expressions_worksheet/Discounts/js/script.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Conditionals_worksheet/Group_1_Last_chance_for_gas/js/script.js">
+<persistable path="/Conditionals_worksheet/Group_1_Last_chance_for_gas/js/script.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Expressions_worksheet/Average_shopping_bill/js/script.js">
-<persistable path="/Expressions_worksheet/Average_shopping_bill/js/script.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Conditionals_worksheet/Group_3_movie_ticket_price/index.html">
+<persistable path="/Conditionals_worksheet/Group_3_movie_ticket_price/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Conditionals_worksheet/Group_2_check_the_login/index.html">
+<persistable path="/Conditionals_worksheet/Group_2_check_the_login/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Conditionals_worksheet/Group_1_Last_chance_for_gas/index.html">
+<persistable path="/Conditionals_worksheet/Group_1_Last_chance_for_gas/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="/Users/AndrewDTillett/WebProgFund/Conditionals Screencast Project/js/script.js">
+<persistable uri="file:/Users/AndrewDTillett/WebProgFund/Conditionals%20Screencast%20Project/js/script.js"/>
 </file>
 </mruList>
 </workbench>
