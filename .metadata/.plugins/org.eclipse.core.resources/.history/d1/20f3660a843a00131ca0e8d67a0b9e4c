@@ -23,7 +23,7 @@ private function calculateArea(w, h ):Number
      return w *h;
 }
 
-Problem: Circumference - 2*PI*R
+Problem: Circumference
 
 Calculate the circumference of a circle.
 Parameter(s) for function:
@@ -33,11 +33,5 @@ Circumference of the circle
 Result to print to the console:
 “The circumference of the circle is X”;
 */
-var radius = 4;
-var pi = 3.141592;
-var circumference = calculateCircumference(2*pi*radius);
-function calcCircumference(radius){
-}
-
 
 
