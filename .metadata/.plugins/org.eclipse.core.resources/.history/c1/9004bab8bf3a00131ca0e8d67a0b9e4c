@@ -22,8 +22,8 @@ Result to print to the console:
 “The circumference of the circle is X”;
 */
 
-var circumference = calcCircumference(10);//CALLS the function and holds the returning value from the function
-console.log(circumference);//Prints the result of the circumference variable to the console
+var circumference = calcCircumference(4);//CALLS the function and holds the returning value from the function
+console.log(circumference);
 function calcCircumference(radius){
 	var pi = 3.141592;
 	var circumference = 2*pi*radius;
