@@ -21,21 +21,15 @@ At least one logical operator
 
 
 Problem:
-Work and school take up a lot of time. School deadlines need to be met, but so does the responsibility of a job. Calculate how many hours you must spend per day on schoolwork based on days left until deadline, hours spent at work, and school workload
+Work and school take up a lot of time. School deadlines need to be met, but so does the responsibility of a job. Calculate if you would be able to meet a deadline based on workload in hours, hours spent working on school work, hours at work, and days left until the deadline.
 
 Parameters:
 School workload
+Hours working on schoolwork
 Hours at work
 Days left until deadline
 */
 
 
-var result = calcHours(16);
-
-//Formula: School workload / (days left - hours at work)
-function calcHours(workLoad, timeSpentWork, daysLeft){
-	var daysInHours = daysLeft*24
-	var calcHours = workLoad - (timeSpentSchool + timeSpentWork);
-	return calcHours;
-}
+var result = calcHours(workLoad, timeSpentSchool, timeSpentWork, daysLeft);
 

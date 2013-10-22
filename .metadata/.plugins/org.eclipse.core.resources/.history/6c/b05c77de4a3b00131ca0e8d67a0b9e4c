@@ -32,10 +32,9 @@ Days left until deadline
 
 var result = calcHours(16);
 
-//Formula: School workload / (days left - hours at work)
-function calcHours(workLoad, timeSpentWork, daysLeft){
-	var daysInHours = daysLeft*24
-	var calcHours = workLoad - (timeSpentSchool + timeSpentWork);
+//Formula: School workload - (hours working on schoolwork*daysLeft
+function calcHours(workLoad, timeSpentSchool, timeSpentWork, daysLeft){
+	var calcHours = workLoad - (timeSpentSchool + timeSpentWork + daysInHours);
 	return calcHours;
 }
 
