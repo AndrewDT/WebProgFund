@@ -19,21 +19,6 @@ A function with three parameters.
 At least one logical operator
 
 Problem:
-As a personal trainer, it is important for me to know a person's one rep max when lifting weight so I can fine tune their workout plan. Calculate your one rep max based on the weight lifted in pounds for 4-6 reps.
+As a personal trainer, it is important for me to know a person's one rep max when lifting weight so I can fine tune their workout plan. Calculate your one rep max based on
 
-Parameters:
-User's weight
-
-Result:
-""
 */
-var weightInPounds = prompt("Please enter the weight you are lifting for 4-6 reps in pounds");
-var calcOneRM = function(weightInPounds){
-	weightInKilos = weightInPounds/2.205;
-	calcOneRM = (weightInKilos * 1.1307) + 0.6998;
-	return calcOneRM;
-}
-
-var result = calcOneRM(weightInPounds);
-console.log(result);
-

@@ -23,13 +23,10 @@ As a personal trainer, it is important for me to know a person's one rep max whe
 
 Parameters:
 User's weight
-
-Result:
-""
 */
 var weightInPounds = prompt("Please enter the weight you are lifting for 4-6 reps in pounds");
 var calcOneRM = function(weightInPounds){
-	weightInKilos = weightInPounds/2.205;
+	weightInKilos = weightInPounds/2.2;
 	calcOneRM = (weightInKilos * 1.1307) + 0.6998;
 	return calcOneRM;
 }
