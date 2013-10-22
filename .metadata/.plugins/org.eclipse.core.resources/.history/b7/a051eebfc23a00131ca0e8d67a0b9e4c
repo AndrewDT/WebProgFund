@@ -11,7 +11,7 @@ There should be a minimum of 20 commits to your git repository.
 This should all be done in a single project and single .as file.
 
 
-Problem:Stung! stings*animal weight in pounds = stings needed
+Problem:Stung!
 
 It takes 8.666666667 bee stings per pound to kill an animal. Calculate how many bee stings are needed to kill an animal in a function
 Given:
@@ -25,10 +25,7 @@ Result to print to the console:
 */
 
 var deadlyStings = calcDeadlyStings(200);
-console.log(deadlyStings);
 
 function calcDeadlyStings(victimWeight){
-	var stingsNeeded = 8.666666667;	
-	deadlyStings = victimWeight*stingsNeeded;
-	return deadlyStings;
+	
 }

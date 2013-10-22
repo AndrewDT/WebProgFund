@@ -25,10 +25,9 @@ Result to print to the console:
 */
 
 var deadlyStings = calcDeadlyStings(200);
-console.log(deadlyStings);
 
 function calcDeadlyStings(victimWeight){
-	var stingsNeeded = 8.666666667;	
-	deadlyStings = victimWeight*stingsNeeded;
-	return deadlyStings;
+	var stingsNeeded = 8.666666667;
+	
+	
 }
