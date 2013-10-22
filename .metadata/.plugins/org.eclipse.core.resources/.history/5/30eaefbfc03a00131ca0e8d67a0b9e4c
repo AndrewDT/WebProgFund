@@ -26,7 +26,7 @@ var circumference = calcCircumference(10);//CALLS the function and holds the ret
 console.log(circumference);//Prints the result of the circumference variable to the console
 function calcCircumference(radius){//Sets up a function that acts when called out in the code and acts out the interior code and formula
 	var pi = 3.141592;//A variable used to hold the value of pi up to 6 decimals rather than use the number itself in the later formula
-	var circumference = 2*pi*radius;//Variable used to hold the value of the formula result
+	var circumference = 2*pi*radius;
 	return circumference;
 }
 
