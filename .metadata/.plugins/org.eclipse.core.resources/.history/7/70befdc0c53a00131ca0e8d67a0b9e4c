@@ -29,6 +29,6 @@ console.log("It takes " + deadlyStings + " bee stings to kill this animal.");//P
 
 function calcDeadlyStings(victimWeight){//Sets up a function that acts when called out in the code and acts out the interior code and formula
 	var stingsNeeded = 8.666666667;// Variable that holds a value needed for use in the later formula
-	var deadlyStings = victimWeight*stingsNeeded;// Variable that holds a formula and the result of the formula
-	return deadlyStings;//Returns the value of the variable to the function CALL
+	deadlyStings = victimWeight*stingsNeeded;
+	return deadlyStings;
 }
