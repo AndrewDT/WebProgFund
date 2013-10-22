@@ -11,6 +11,18 @@ There should be a minimum of 20 commits to your git repository.
 This should all be done in a single project and single .as file.
 
 
+Example:
+Calculate the area of a rectangle given the width and height of the rectangle.
+//Calculate the Area of a Rectangle
+var width = 5;
+var height = 6;
+var area = calculateArea(width, height);
+console.log(“The Area of the Rectangle is “ + area);
+private function calculateArea(w, h ):Number
+{
+     return w *h;
+}
+
 Problem: Circumference - 2*PI*R
 
 Calculate the circumference of a circle.
