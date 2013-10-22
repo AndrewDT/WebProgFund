@@ -19,31 +19,22 @@ A function with three parameters.
 At least one logical operator
 
 Problem:
-As a personal trainer, it is important for me to know a person's one rep max when lifting weight so I can fine tune their workout plan with different weight percentages. Calculate your one rep max based on the weight lifted in pounds for 4 - 6 reps
+As a personal trainer, it is important for me to know a person's one rep max when lifting weight so I can fine tune their workout plan with different weight percentages. Calculate your one rep max based on the weight lifted in pounds for 4 - 6 reps.
 
 Parameters:
 User's weight
 User's One Rep Max
 
 Result:
-"Your One Rep Max is Xlbs based on your current load of Xlbs for 4 - 6 reps. You are lifting at X% of your One Rep Max."
+""
 */
-var weightInPounds = prompt("Please enter the weight you are lifting for in pounds \n (We will convert this to Kilograms)");
-var calcOneRM = function(weightInPounds){
+var weightInPounds = prompt("Please enter the weight you are lifting for in pounds");
+var calcOneRM = function(weightInPounds, reps){
 	weightInKilos = weightInPounds/2.205;
 	calcOneRM = (weightInKilos * 1.1307) + 0.6998;
 	return calcOneRM;
 }
 
 var oneRMResult = calcOneRM(weightInPounds);
-
-var calcPercentage = function(weightInPounds, oneRMResult){
-	weightInKilos = weightInPounds/2.205;
-	calcPercentage = weightInKilos/oneRMResult*100;
-	return calcPercentage;
-}
-
-var result = calcPercentage(weightInPounds, oneRMResult);
-console.log("Your One Rep Max is " + oneRMResult + "kgs based on your current load of " + weightInPounds + "lbs for 4 - 6 reps. You are lifting at " + result + "% of your One Rep Max.");
 
 

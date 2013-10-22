@@ -26,7 +26,7 @@ User's weight
 User's One Rep Max
 
 Result:
-"Your One Rep Max is Xlbs based on your current load of Xlbs for 4 - 6 reps. You are lifting at X% of your One Rep Max."
+"Your One Rep Max is Xlbs based on your current load of Xlbs for 4 - 6 reps. You are lifting at X% of your One Rep Max(ORM)"
 */
 var weightInPounds = prompt("Please enter the weight you are lifting for in pounds \n (We will convert this to Kilograms)");
 var calcOneRM = function(weightInPounds){
@@ -44,6 +44,6 @@ var calcPercentage = function(weightInPounds, oneRMResult){
 }
 
 var result = calcPercentage(weightInPounds, oneRMResult);
-console.log("Your One Rep Max is " + oneRMResult + "kgs based on your current load of " + weightInPounds + "lbs for 4 - 6 reps. You are lifting at " + result + "% of your One Rep Max.");
+console.log("Your One Rep Max is " + oneRMResult + "lbs based on your current load of " + weightInPounds);
 
 
