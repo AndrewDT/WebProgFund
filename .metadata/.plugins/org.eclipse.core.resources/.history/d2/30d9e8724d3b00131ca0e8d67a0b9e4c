@@ -29,14 +29,9 @@ Time spent working
 Days left until deadline
 */
 
-var workLoad = prompt("Please enter the total hours of your workload.");
-var timeSpentWorking = prompt("Please enter how many hours you plan to work per day.");
-var daysLeft = prompt("Please enter how many days you have left to work on the project.")
-var result = calcHours(workLoad, timeSpentWorking, daysLeft);
 
-if(result - workLoad <= 0){
-	console.log(result);	
-}
+var result = calcHours(350, 17, 14);
+console.log(result);
 
 
 function calcHours(workLoad, timeSpentWorking, daysLeft){

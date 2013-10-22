@@ -21,26 +21,22 @@ At least one logical operator
 
 
 Problem:
-When working, there are always a number of deadlines to meet. Calculate to see if you can meet your work's deadline based on work load, time spent working per day, and days left until deadline.
+Work and school take up a lot of time. School deadlines need to be met, but so does the responsibility of a job. Calculate how many hours you must spend per day on schoolwork based on days left until deadline, hours spent at work, and school workload
 
 Parameters:
-Workload
-Time spent working
+School workload
+Hours at work
 Days left until deadline
 */
 
-var workLoad = prompt("Please enter the total hours of your workload.");
-var timeSpentWorking = prompt("Please enter how many hours you plan to work per day.");
-var daysLeft = prompt("Please enter how many days you have left to work on the project.")
-var result = calcHours(workLoad, timeSpentWorking, daysLeft);
 
-if(result - workLoad <= 0){
-	console.log(result);	
-}
+var result = calcHours(16, 17, 3);
+console.log(result);
 
-
-function calcHours(workLoad, timeSpentWorking, daysLeft){
-	var calcHours = workLoad - (timeSpentWorking*daysLeft)
+//Formula: School workload / (days left - hours at work)
+function calcHours(workLoad, timeSpentWork, daysLeft){
+	var daysInHours = daysLeft*24
+	var calcHours = workLoad - (daysInHours - timeSpentWork);
 	return calcHours;
 }
 
