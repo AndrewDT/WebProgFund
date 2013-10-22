@@ -33,7 +33,8 @@ Circumference of the circle
 Result to print to the console:
 “The circumference of the circle is X”;
 */
-
+var radius = 4;
+var pi = 3.141592;
 var circumference = calcCircumference(4);
 console.log(circumference);
 function calcCircumference(radius){

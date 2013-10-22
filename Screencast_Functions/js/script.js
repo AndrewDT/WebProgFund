@@ -127,7 +127,7 @@ dogYears(5);
 //Returning Values - Getting values back from a function
 
 /*
-var total = calcArea(30, 20);//Takes returned balue
+var total = calcArea(30, 20);//Takes returned value
 
 function calcArea(w, h);{
 	var area = w * h;
