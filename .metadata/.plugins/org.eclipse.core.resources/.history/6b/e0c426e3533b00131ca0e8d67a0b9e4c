@@ -35,10 +35,7 @@ Result:
 var workLoad = prompt("Please enter the total hours of your workload.");
 var timeSpentWorking = prompt("Please enter how many hours you plan to work per day.");
 var daysLeft = prompt("Please enter how many days you have left to work on the project.");
-var result = calcHours(workLoad, timeSpentWorking, daysLeft);
-if(result < 0){
-	var result = result*(-1);
-}
+var +result = calcHours(workLoad, timeSpentWorking, daysLeft);
 
 if(result - workLoad <= 0){
 	console.log("If you spend " + timeSpentWorking + " hours working on your " + workLoad + " hour project, you can meet your deadline of " + daysLeft + " days with " + result + " hours leftover!" );	
