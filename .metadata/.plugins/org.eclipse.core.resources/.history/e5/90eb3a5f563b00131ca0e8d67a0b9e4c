@@ -40,7 +40,7 @@ if( result <= 0){
 	result = result*(-1);
 	console.log("If you spend " + timeSpentWorking + " hours working on your " + workLoad + " hour project, you can meet your deadline of " + daysLeft + " days with " + result + " hours to spare!" );	
 }else{
-	console.log("Sorry, looks like you'll be " + result + " hours short of meeting the deadline if you work " + timeSpentWorking + " hours per day for " + daysLeft + " days on your " + workLoad + " hour project. Better re-evaluate!");
+	console.log("Sorry, looks like you will only work " + result + " hours total by spending " + timeSpentWorking + " hours per day for " + daysLeft + " days on your " + workLoad + " hour project. Better re-evaluate!");
 }
 
 

@@ -29,18 +29,17 @@ Time spent working
 Days left until deadline
 
 Result:
-"If you spend X hours a day working on your X hour project, you can meet your deadline of X days with X hours to spare!" or "Sorry, looks like you will only work X hours total by spending X hours per day for X days on your X hour project. Better re-evaluate!"
+"If you spend X hours working on your X hour project, you can meet your deadline of X days with X hours leftover!" or "Sorry, looks like you will only work X hours total by spending X hours per day for X days on your X hour project. Better re-evaluate!"
 */
 
 var workLoad = prompt("Please enter the total hours of your workload.");
 var timeSpentWorking = prompt("Please enter how many hours you plan to work per day.");
 var daysLeft = prompt("Please enter how many days you have left to work on the project.");
 var result = calcHours(workLoad, timeSpentWorking, daysLeft);
-if( result <= 0){
-	result = result*(-1);
-	console.log("If you spend " + timeSpentWorking + " hours working on your " + workLoad + " hour project, you can meet your deadline of " + daysLeft + " days with " + result + " hours to spare!" );	
-}else{
-	console.log("Sorry, looks like you'll be " + result + " hours short of meeting the deadline if you work " + timeSpentWorking + " hours per day for " + daysLeft + " days on your " + workLoad + " hour project. Better re-evaluate!");
+if(result < 0){
+	var result = result*(-1);
+}else if((result - workLoad) = 0){
+	console.log("If you spend " + timeSpentWorking + " hours working on your " + workLoad + " hour project, you can meet your deadline of " + daysLeft + " days with " + result + " hours leftover!" );	
 }
 
 
