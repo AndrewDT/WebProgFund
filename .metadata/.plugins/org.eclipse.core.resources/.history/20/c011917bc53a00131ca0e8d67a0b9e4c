@@ -25,9 +25,9 @@ Result to print to the console:
 */
 
 var deadlyStings = calcDeadlyStings(200);//CALLS the function and holds the returning value from the function
-console.log("It takes " + deadlyStings + " bee stings to kill this animal.");//Prints the result of the circumference variable to the console
+console.log("It takes " + deadlyStings + " bee stings to kill this animal.");
 
-function calcDeadlyStings(victimWeight){//Sets up a function that acts when called out in the code and acts out the interior code and formula
+function calcDeadlyStings(victimWeight){
 	var stingsNeeded = 8.666666667;	
 	deadlyStings = victimWeight*stingsNeeded;
 	return deadlyStings;
