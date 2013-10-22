@@ -24,7 +24,7 @@ Result to print to the console:
 “It takes X bee stings to kill this animal.
 */
 
-var deadlyStings = calcDeadlyStings(200);//CALLS the function and holds the returning value from the function
+var deadlyStings = calcDeadlyStings(200);
 console.log("It takes " + deadlyStings + " bee stings to kill this animal.");
 
 function calcDeadlyStings(victimWeight){
