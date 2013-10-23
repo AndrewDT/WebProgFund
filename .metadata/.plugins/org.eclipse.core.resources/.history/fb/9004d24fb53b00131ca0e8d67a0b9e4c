@@ -38,7 +38,7 @@ if(workLoad === ""){
 }
 var timeSpentWorking = prompt("Please enter how many hours you plan to work per day.");
 if(timeSpentWorking === "" || timeSpentWorking > 24){
-	timeSpentWorking = prompt("PLEASE ENTER A VALID NUMBER OF HOURS YOU PLAN TO WORK PER DAY ON THE PROJECT");
+	timeSpentWorking = prompt("IT IS NECESSARY TO KNOW HOW MANY HOURS A DAY YOU PLAN TO WORK ON THE PROJECT");
 }
 var daysLeft = prompt("Please enter how many days you have left to work on the project.");
 if(daysLeft === ""){

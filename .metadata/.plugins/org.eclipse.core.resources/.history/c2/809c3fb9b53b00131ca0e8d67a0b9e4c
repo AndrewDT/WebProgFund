@@ -29,7 +29,7 @@ Time
 
 var distance = prompt("Please enter the distance Captain America is throwing his shield (In meters)");
 if(distance === ""){
-	distance = prompt("DISTANCE IS NECESSARY TO CALCULATE THE SPEED OF CAP'S SHIELD");
+	distance = prompt("DISTANCE IS NECESSARY TO CALCULATE THE SPEED OF CAP'S SHIELD")
 }
 var time = prompt("Please enter the time it takes the shield to travel the distance (In seconds)");
 if(time === ""){

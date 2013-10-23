@@ -37,8 +37,8 @@ if(workLoad === ""){
 	workLoad = prompt("PROJECT LENGTH ESTIMATE IS NEEDED");
 }
 var timeSpentWorking = prompt("Please enter how many hours you plan to work per day.");
-if(timeSpentWorking === "" || timeSpentWorking > 24){
-	timeSpentWorking = prompt("PLEASE ENTER A VALID NUMBER OF HOURS YOU PLAN TO WORK PER DAY ON THE PROJECT");
+if(timeSpentWorking === ""){
+	timeSpentWorking = prompt("IT IS NECESSARY TO KNOW HOW MANY HOURS A DAY YOU PLAN TO WORK ON THE PROJECT");
 }
 var daysLeft = prompt("Please enter how many days you have left to work on the project.");
 if(daysLeft === ""){
@@ -47,7 +47,7 @@ if(daysLeft === ""){
 var result = calcHours(workLoad, timeSpentWorking, daysLeft);
 if( result <= 0){
 	result = result*(-1);
-	console.log("If you spend " + timeSpentWorking + " hours a day working on your " + workLoad + " hour project, you can meet your deadline of " + daysLeft + " days with " + result + " hours to spare!" );	
+	console.log("If you spend " + timeSpentWorking + " hours  a day working on your " + workLoad + " hour project, you can meet your deadline of " + daysLeft + " days with " + result + " hours to spare!" );	
 }else if(result > 0){
 	console.log("Sorry, looks like you'll be " + result + " hours short of meeting the deadline if you work " + timeSpentWorking + " hours per day for " + daysLeft + " days on your " + workLoad + " hour project. Better re-evaluate!");
 }
