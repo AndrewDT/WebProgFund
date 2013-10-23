@@ -29,7 +29,7 @@ Result:
 "Your One Rep Max is Xlbs based on your current load of Xlbs for 4 - 6 reps. You are lifting at X% of your One Rep Max."
 */
 var weightInPounds = prompt("Please enter the weight you are lifting for in pounds \n (We will convert this to Kilograms)");
-if(weightInPounds === "" || weightInPounds < 90){
+if(weightInPounds === "" || weightInPounds <=0){
 	weightInPounds = prompt("A VALID WEIGHT IS NECESSARY TO CALCULATE YOUR ONE REP MAX");
 }
 
