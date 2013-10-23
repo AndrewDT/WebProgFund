@@ -19,7 +19,7 @@ A function with three parameters.
 At least one logical operator
 
 Problem:
-As a personal trainer, it is important for me to know a person's one rep max when lifting weight so I can fine tune their workout plan with different weight percentages. Calculate your one rep max based on the weight lifted in pounds for 4 - 6 reps and how much that percentage is of your one rep max.
+As a personal trainer, it is important for me to know a person's one rep max when lifting weight so I can fine tune their workout plan with different weight percentages. Calculate your one rep max based on the weight lifted in pounds for 4 - 6 reps
 
 Parameters:
 User's weight
