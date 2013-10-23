@@ -20,7 +20,7 @@ A function with three parameters.
 At least one logical operator
 
 Problem:
-Captain America uses his shield as a weapon. He can throw it very fast, it is said he can throw it at least 55m/s Calculate the velocity of Cap's shield to see if it meets that record.
+Captain America uses his shield as a weapon. He can throw it very fast, it is said he can throw it at least 95m/s Calculate the velocity of Cap's shield to see if it meets that record.
 
 Parameters:
 Distance
@@ -30,8 +30,8 @@ Time
 var distance = prompt("Please enter the distance Captain America is throwing his shield \n (In meters)");
 var time = prompt("Please enter the time it takes the shield to travel the distance \n (In seconds)");
 var result = shieldVelocity(distance, time);
-(result >= 55) ? console.log("If Cap's shield travels " + distance + " meters in " + time + " seconds, its velocity will be " + result + "m/s which is faster than his previous record of 55m/s!") :
-console.log("Traveling at only " + result + "m/s, for " + distance + " meters, and " + time + " seconds, Cap's shield will not beat his previous record of 55m/s!");
+(result >= 55) ? console.log("If Cap's shield travels " + distance + " meters in " + time + " seconds, its velocity will be " + result + "m/s which is faster than his previous record of 95m/s!") :
+console.log("Traveling at only " + result + "m/s, for " + distance + " meters, and " + time + " seconds, Cap's shield will not beat his previous record of 95m/s!");
 
 function shieldVelocity(distance, time){
 	var velocity = distance/time;
