@@ -19,10 +19,5 @@ An expression with two arithmetic operators
 A function with three parameters.
 At least one logical operator
 
-Problem:
-Captain America uses his shield as a weapon. He can throw it very fast, but just how fast? Calculate the velocit of Cap's shield.
 
-Parameters:
-Distance
-Time
 */
