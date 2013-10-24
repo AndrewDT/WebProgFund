@@ -39,9 +39,9 @@ var result = shieldVelocity(distance, time);//Variable set to hold the results o
 (result >= 55) ? console.log("If Cap's shield travels " + distance + " meters in " + time + " seconds, its velocity will be " + result + "m/s which is faster than his previous record of 55m/s!") :
 console.log("Traveling at only " + result + "m/s, for " + distance + " meters, and " + time + " seconds, Cap's shield will not beat his previous record of 55m/s!");//Ternary set to print one result to the console if the condition is true and another if the condition is false
 
-function shieldVelocity(distance, time){//Function set to calculate the value of velocity with 2 parameters, distance and time
-	var velocity = distance/time;//Variable set to calculate and hold the value of velocity using the formula's parameters
-	return velocity;//Returns the value of velocity to the CALL of the function
+function shieldVelocity(distance, time){//Function set to calculate the value of velocity
+	var velocity = distance/time;
+	return velocity;
 }
 
 
