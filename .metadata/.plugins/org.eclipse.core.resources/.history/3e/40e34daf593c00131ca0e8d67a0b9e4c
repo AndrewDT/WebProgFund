@@ -32,13 +32,13 @@ Result:
 "If you spend X hours a day working on your X hour project, you can meet your deadline of X days with X hours to spare!" or "Sorry, looks like you will only work X hours total by spending X hours per day for X days on your X hour project. Better re-evaluate!"
 */
 
-var workLoad = prompt("Please enter the total hours of your workload.");//Variable set to prompt the user to input the total hours of their project's workload
-if(workLoad === ""){//Statement set to happen if workLoad is exactly equal to an empty field
-	workLoad = prompt("PROJECT LENGTH ESTIMATE IS NEEDED");//Changes the prompt value of workLoad if the statement is true
+var workLoad = prompt("Please enter the total hours of your workload.");
+if(workLoad === ""){
+	workLoad = prompt("PROJECT LENGTH ESTIMATE IS NEEDED");
 }
-var timeSpentWorking = prompt("Please enter how many hours you plan to work per day.");//Variable set to prompt the user to input the amount of hours they plan to work per day on the project
-if(timeSpentWorking === "" || timeSpentWorking > 24){//Statement set to happen if timeSpentWorking is exactly equal to an empty field or if timeSpentWorking is greater than 24 hours
-	timeSpentWorking = prompt("PLEASE ENTER A VALID NUMBER OF HOURS YOU PLAN TO WORK PER DAY ON THE PROJECT");//Changes the prompt value of timeSpendWorking if the statement is true
+var timeSpentWorking = prompt("Please enter how many hours you plan to work per day.");
+if(timeSpentWorking === "" || timeSpentWorking > 24){
+	timeSpentWorking = prompt("PLEASE ENTER A VALID NUMBER OF HOURS YOU PLAN TO WORK PER DAY ON THE PROJECT");
 }
 var daysLeft = prompt("Please enter how many days you have left to work on the project.");
 if(daysLeft === ""){

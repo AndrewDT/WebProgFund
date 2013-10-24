@@ -37,8 +37,8 @@ if(workLoad === ""){//Statement set to happen if workLoad is exactly equal to an
 	workLoad = prompt("PROJECT LENGTH ESTIMATE IS NEEDED");//Changes the prompt value of workLoad if the statement is true
 }
 var timeSpentWorking = prompt("Please enter how many hours you plan to work per day.");//Variable set to prompt the user to input the amount of hours they plan to work per day on the project
-if(timeSpentWorking === "" || timeSpentWorking > 24){//Statement set to happen if timeSpentWorking is exactly equal to an empty field or if timeSpentWorking is greater than 24 hours
-	timeSpentWorking = prompt("PLEASE ENTER A VALID NUMBER OF HOURS YOU PLAN TO WORK PER DAY ON THE PROJECT");//Changes the prompt value of timeSpendWorking if the statement is true
+if(timeSpentWorking === "" || timeSpentWorking > 24){
+	timeSpentWorking = prompt("PLEASE ENTER A VALID NUMBER OF HOURS YOU PLAN TO WORK PER DAY ON THE PROJECT");
 }
 var daysLeft = prompt("Please enter how many days you have left to work on the project.");
 if(daysLeft === ""){
