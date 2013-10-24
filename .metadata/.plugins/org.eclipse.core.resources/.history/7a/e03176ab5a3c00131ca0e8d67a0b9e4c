@@ -44,7 +44,7 @@ var daysLeft = prompt("Please enter how many days you have left to work on the p
 if(daysLeft === ""){//Statement set to happen if daysLeft is exactly equal to an empty field
 	daysLeft = prompt("DAYS LEFT UNTIL DEADLINE ARE NECESSARY");//Changes the prompt of daysLeft is the statement is true
 }
-var result = calcHours(workLoad, timeSpentWorking, daysLeft);//Variable set to hold the result of the functions calculations and provide the arguements to the function. The function's CALL
+var result = calcHours(workLoad, timeSpentWorking, daysLeft);//Variable set to hold the result of the functions calculations and provide the arguements to the function
 if( result <= 0){//Statement set to happen if the result is greater than or equal to 0
 	result = result*(-1);//Changes the value of result from a negative number to a positive one if the statement is true
 	console.log("If you spend " + timeSpentWorking + " hours a day working on your " + workLoad + " hour project, you can meet your deadline of " + daysLeft + " days with " + result + " hours to spare!" );//Prints to console the stated concatenation if the statement is true
@@ -53,8 +53,8 @@ if( result <= 0){//Statement set to happen if the result is greater than or equa
 }
 
 
-function calcHours(workLoad, timeSpentWorking, daysLeft){//Function with 3 parameters that calculates if the user can meet the deadline given the inputted user information
-	var calcHours = workLoad - (timeSpentWorking*daysLeft);//Variable set to calculate and hold the formula and result to determine whether the user can meet their deadline
-	return calcHours;//Returns the resulting value of calcHours to the function's CALL
+function calcHours(workLoad, timeSpentWorking, daysLeft){
+	var calcHours = workLoad - (timeSpentWorking*daysLeft);
+	return calcHours;
 }
 
