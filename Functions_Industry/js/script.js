@@ -28,26 +28,26 @@ User's One Rep Max
 Result:
 "Your One Rep Max is Xlbs based on your current load of Xlbs for 4 - 6 reps. You are lifting at X% of your One Rep Max."
 */
-var weightInPounds = prompt("Please enter the weight you are lifting for in pounds \n (We will convert this to Kilograms)");
-if(weightInPounds === "" || weightInPounds < 90){
-	weightInPounds = prompt("A VALID WEIGHT IS NECESSARY TO CALCULATE YOUR ONE REP MAX");
+var weightInPounds = prompt("Please enter the weight you are lifting for in pounds \n (We will convert this to Kilograms)");//Variable with a prompt to have the user input a weight load value in pounds
+if(weightInPounds === "" || weightInPounds < 90){//Statement that is set in case an invalid user weight load is entered or weightInPounds is exactly equal to a blank field
+	weightInPounds = prompt("A VALID WEIGHT IS NECESSARY TO CALCULATE YOUR ONE REP MAX");//Changes the prompt of weightInPounds if the statement is true
 }
 
-var calcOneRM = function(weightInPounds){
-	weightInKilos = weightInPounds/2.205;
-	calcOneRM = (weightInKilos * 1.1307) + 0.6998;
-	return calcOneRM;
+var calcOneRM = function(weightInPounds){//Anonymous function used to calculate the user's One Rep Max
+	weightInKilos = weightInPounds/2.205;//Variable set to calculate and hold the value of the user's weight load and convert it to kilos
+	calcOneRM = (weightInKilos * 1.1307) + 0.6998;//Variable set to calculate and hold the value of the user's One Rep Max
+	return calcOneRM;//Returns the value of calcOneRM to the CALL
 }
 
-var oneRMResult = calcOneRM(weightInPounds);
+var oneRMResult = calcOneRM(weightInPounds);//Variable set to hold the value of the function calcOneRM, with arguements. The function's CALL
 
-var calcPercentage = function(weightInPounds, oneRMResult){
-	weightInKilos = weightInPounds/2.205;
-	calcPercentage = weightInKilos/oneRMResult*100;
-	return calcPercentage;
+var calcPercentage = function(weightInPounds, oneRMResult){//Anonymous function used to calculate the percentage of a user's One Rep Max they are currently lifting at
+	weightInKilos = weightInPounds/2.205;//Variable set to calculate and hold the value of the user's weight load and convert it to kilos
+	calcPercentage = weightInKilos/oneRMResult*100;//Variable set to calculate and hold the value of the percentage of a user's One Rep Max they are currently lifting at
+	return calcPercentage;//Returns the value of calcPercentage to the function's' CALL
 }
 
-var result = calcPercentage(weightInPounds, oneRMResult);
-console.log("Your One Rep Max is " + oneRMResult + "kgs based on your current load of " + weightInPounds + "lbs for 4 - 6 reps. You are lifting at " + result + "% of your One Rep Max.");
+var result = calcPercentage(weightInPounds, oneRMResult);//Variable set to hold the value of the function calcPercentage, with arguements. The function's CALL
+console.log("Your One Rep Max is " + oneRMResult + "kgs based on your current load of " + weightInPounds + "lbs for 4 - 6 reps. You are lifting at " + result + "% of your One Rep Max.");//Prints to console the concatenation with each formula result and user inputted value
 
 
