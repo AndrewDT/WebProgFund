@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="49" version="2.0">
+<workbench progressCount="28" version="2.0">
 <workbenchAdvisor/>
-<window height="841" width="1440" x="7" y="62">
+<window height="874" width="1440" x="-1" y="58">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -63,10 +63,20 @@
 <viewState/>
 </view>
 <view id="com.aptana.explorer.view" partName="App Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="Conditionals_Assignment">
-<project name="Conditionals_Assignment">
+<viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="Functions_Wacky">
+<project name="Functions_Industry">
 <selection>
-<element path="/Conditionals_Assignment"/>
+<element path="/Functions_Personal"/>
+</selection>
+</project>
+<project name="Functions_Personal">
+<selection>
+<element path="/Functions_Wacky"/>
+</selection>
+</project>
+<project name="Functions_Wacky">
+<selection>
+<element path="/Functions_Wacky"/>
 </selection>
 </project>
 </viewState>
@@ -138,7 +148,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.17004898" ratioLeft="243" ratioRight="1186" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.13296011" ratioLeft="190" ratioRight="1239" relationship="2" relative="left"/>
 <info folder="true" part="terminalArea" ratio="0.74938875" ratioLeft="613" ratioRight="205" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -200,50 +210,41 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Conditionals_Assignment/Conditionals_Personal/js/script.js">
-<persistable path="/Conditionals_Assignment/Conditionals_Personal/js/script.js"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.css" name="style.css" tooltip="/Users/AndrewDTillett/Desktop/Games/style.css">
+<persistable uri="file:/Users/AndrewDTillett/Desktop/Games/style.css"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Conditionals_Assignment/Conditionals_Industry/js/script.js">
-<persistable path="/Conditionals_Assignment/Conditionals_Industry/js/script.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Functions_Personal/js/script.js">
+<persistable path="/Functions_Personal/js/script.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Conditionals_Assignment/Conditionals_Wacky/js/script.js">
-<persistable path="/Conditionals_Assignment/Conditionals_Wacky/js/script.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Functions_Industry/js/script.js">
+<persistable path="/Functions_Industry/js/script.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Conditionals_Assignment/Conditionals_Wacky/index.html">
-<persistable path="/Conditionals_Assignment/Conditionals_Wacky/index.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Functions_Wacky/index.html">
+<persistable path="/Functions_Wacky/index.html"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="/Users/AndrewDTillett/WebProgFund/Expressions Screencast Projects/js/script.js">
-<persistable uri="file:/Users/AndrewDTillett/WebProgFund/Expressions%20Screencast%20Projects/js/script.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Conditionals_Assignment/Conditionals_Industry/index.html">
-<persistable path="/Conditionals_Assignment/Conditionals_Industry/index.html"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="/Users/AndrewDTillett/WebProgFund/Conditionals_Assignment/Conditionals_Personal/index.html">
-<persistable uri="file:/Users/AndrewDTillett/WebProgFund/Conditionals_Assignment/Conditionals_Personal/index.html"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="/Users/AndrewDTillett/WebProgFund/Conditionals_Assignment/Conditionals_Personal/js/script.js">
-<persistable uri="file:/Users/AndrewDTillett/WebProgFund/Conditionals_Assignment/Conditionals_Personal/js/script.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Conditionals_worksheet/Group_3_movie_ticket_price/js/script.js">
-<persistable path="/Conditionals_worksheet/Group_3_movie_ticket_price/js/script.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Conditionals_worksheet/Group_2_check_the_login/js/script.js">
-<persistable path="/Conditionals_worksheet/Group_2_check_the_login/js/script.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Conditionals_worksheet/Group_1_Last_chance_for_gas/js/script.js">
-<persistable path="/Conditionals_worksheet/Group_1_Last_chance_for_gas/js/script.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Conditionals_worksheet/Group_3_movie_ticket_price/index.html">
-<persistable path="/Conditionals_worksheet/Group_3_movie_ticket_price/index.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Conditionals_worksheet/Group_2_check_the_login/index.html">
-<persistable path="/Conditionals_worksheet/Group_2_check_the_login/index.html"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Conditionals_worksheet/Group_1_Last_chance_for_gas/index.html">
-<persistable path="/Conditionals_worksheet/Group_1_Last_chance_for_gas/index.html"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="Functions_Wacky/js/script.js">
+<persistable path="/Functions_Wacky/js/script.js"/>
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="/Users/AndrewDTillett/WebProgFund/Conditionals Screencast Project/js/script.js">
 <persistable uri="file:/Users/AndrewDTillett/WebProgFund/Conditionals%20Screencast%20Project/js/script.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Functions_Industry/index.html">
+<persistable path="/Functions_Industry/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="/Users/AndrewDTillett/WebProgFund/Screencast_Functions/js/script.js">
+<persistable uri="file:/Users/AndrewDTillett/WebProgFund/Screencast_Functions/js/script.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="Functions_Personal/index.html">
+<persistable path="/Functions_Personal/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="index.html" tooltip="/Users/AndrewDTillett/Desktop/assignment/index.html">
+<persistable uri="file:/Users/AndrewDTillett/Desktop/assignment/index.html"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.css" name="style.css" tooltip="/Users/AndrewDTillett/Desktop/assignment/style.css">
+<persistable uri="file:/Users/AndrewDTillett/Desktop/assignment/style.css"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="script.js" tooltip="/Users/AndrewDTillett/WebProgFund/Screencast_Loops/js/script.js">
+<persistable uri="file:/Users/AndrewDTillett/WebProgFund/Screencast_Loops/js/script.js"/>
 </file>
 </mruList>
 </workbench>
